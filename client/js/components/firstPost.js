@@ -1,5 +1,5 @@
 if (window.MR === undefined) {window.MR = {};}
-console.log ('Blog component');
+console.log ('post component');
 (function() {
 
 class FirstPost extends React.Component {

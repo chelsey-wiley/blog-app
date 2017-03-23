@@ -2,7 +2,7 @@ if (window.MR === undefined) {window.MR = {};}
 console.log ('English component');
 (function() {
 
-class HeaderComponent extends React.Component {
+class Header extends React.Component {
   render() {
 
     return <div className="div-head">
@@ -17,5 +17,5 @@ class HeaderComponent extends React.Component {
     </div>;
   }
 }
-  MR.HeaderComponent = HeaderComponent;
+  MR.Header = Header;
 }());

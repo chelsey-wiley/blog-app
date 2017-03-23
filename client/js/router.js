@@ -10,12 +10,7 @@ if (window.MR === undefined) {window.MR = {};}
   var IndexRoute = ReactRouter.IndexRoute;
 
   var router = <Router history={ReactRouter.hashHistory}>
-      <Route path="/" component={MR.HomeComponent} />
-      <Route path="/SignLanguageRecordingComponent" component={MR.SignLanguageRecordingComponent}/>
-      <Route path="/YoutubeComponent" component={MR.YoutubeComponent}/>
-      <Route path="/EnglishComponent" component={MR.EnglishComponent}/>
-      <Route path="/EnglishRecordingComponent" component={MR.EnglishRecordingComponent}/>
-      <Route path="/AboutComponent" component={MR.AboutComponent}/>
+      <Route path="/" component={MR.Home} />
       <Route path="/Blog" component={MR.Blog}/>
       <Route path="/Extra" component={MR.Extra}/>
       <Route path="/FirstPost" component={MR.FirstPost}/>

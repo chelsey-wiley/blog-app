@@ -7,7 +7,7 @@ class Blog extends React.Component {
 
     return (<div className="page">
 
-      <MR.HeaderComponent/>
+      <MR.Header/>
 
       <div className="container">
         <h1>Blog</h1>

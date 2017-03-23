@@ -13,16 +13,16 @@ if (window.MR === undefined) {
 }
 console.log('English component');
 (function () {
-  var HeaderComponent = function (_React$Component) {
-    _inherits(HeaderComponent, _React$Component);
+  var Header = function (_React$Component) {
+    _inherits(Header, _React$Component);
 
-    function HeaderComponent() {
-      _classCallCheck(this, HeaderComponent);
+    function Header() {
+      _classCallCheck(this, Header);
 
-      return _possibleConstructorReturn(this, (HeaderComponent.__proto__ || Object.getPrototypeOf(HeaderComponent)).apply(this, arguments));
+      return _possibleConstructorReturn(this, (Header.__proto__ || Object.getPrototypeOf(Header)).apply(this, arguments));
     }
 
-    _createClass(HeaderComponent, [{
+    _createClass(Header, [{
       key: 'render',
       value: function render() {
 
@@ -64,10 +64,10 @@ console.log('English component');
       }
     }]);
 
-    return HeaderComponent;
+    return Header;
   }(React.Component);
 
-  MR.HeaderComponent = HeaderComponent;
+  MR.Header = Header;
 })();
 "use strict";
 
@@ -84,16 +84,16 @@ if (window.MR === undefined) {
 }
 console.log('home component');
 (function () {
-  var HomeComponent = function (_React$Component) {
-    _inherits(HomeComponent, _React$Component);
+  var Home = function (_React$Component) {
+    _inherits(Home, _React$Component);
 
-    function HomeComponent() {
-      _classCallCheck(this, HomeComponent);
+    function Home() {
+      _classCallCheck(this, Home);
 
-      return _possibleConstructorReturn(this, (HomeComponent.__proto__ || Object.getPrototypeOf(HomeComponent)).apply(this, arguments));
+      return _possibleConstructorReturn(this, (Home.__proto__ || Object.getPrototypeOf(Home)).apply(this, arguments));
     }
 
-    _createClass(HomeComponent, [{
+    _createClass(Home, [{
       key: "render",
       value: function render() {
 
@@ -103,14 +103,14 @@ console.log('home component');
           React.createElement(
             "header",
             null,
-            React.createElement(MR.HeaderComponent, null)
+            React.createElement(MR.Header, null)
           ),
           React.createElement(
             "div",
-            { className: "container" },
+            null,
             React.createElement(
               "h1",
-              { className: "home-header" },
+              null,
               "Home"
             )
           )
@@ -118,10 +118,10 @@ console.log('home component');
       }
     }]);
 
-    return HomeComponent;
+    return Home;
   }(React.Component);
 
-  MR.HomeComponent = HomeComponent;
+  MR.Home = Home;
 })();
 "use strict";
 
@@ -154,7 +154,7 @@ console.log('Blog component');
         return React.createElement(
           "div",
           { className: "page" },
-          React.createElement(MR.HeaderComponent, null),
+          React.createElement(MR.Header, null),
           React.createElement(
             "div",
             { className: "container" },
@@ -210,7 +210,7 @@ console.log('Blog component');
         return React.createElement(
           "div",
           { className: "page" },
-          React.createElement(MR.HeaderComponent, null),
+          React.createElement(MR.Header, null),
           React.createElement(
             "div",
             { className: "container" },
@@ -247,7 +247,7 @@ function _inherits(subClass, superClass) { if (typeof superClass !== "function" 
 if (window.MR === undefined) {
   window.MR = {};
 }
-console.log('Blog component');
+console.log('post component');
 (function () {
   var FirstPost = function (_React$Component) {
     _inherits(FirstPost, _React$Component);
@@ -302,12 +302,7 @@ if (window.MR === undefined) {
   var router = React.createElement(
     Router,
     { history: ReactRouter.hashHistory },
-    React.createElement(Route, { path: '/', component: MR.HomeComponent }),
-    React.createElement(Route, { path: '/SignLanguageRecordingComponent', component: MR.SignLanguageRecordingComponent }),
-    React.createElement(Route, { path: '/YoutubeComponent', component: MR.YoutubeComponent }),
-    React.createElement(Route, { path: '/EnglishComponent', component: MR.EnglishComponent }),
-    React.createElement(Route, { path: '/EnglishRecordingComponent', component: MR.EnglishRecordingComponent }),
-    React.createElement(Route, { path: '/AboutComponent', component: MR.AboutComponent }),
+    React.createElement(Route, { path: '/', component: MR.Home }),
     React.createElement(Route, { path: '/Blog', component: MR.Blog }),
     React.createElement(Route, { path: '/Extra', component: MR.Extra }),
     React.createElement(Route, { path: '/FirstPost', component: MR.FirstPost })
