@@ -7,11 +7,12 @@ class HeaderComponent extends React.Component {
 
     return <div className="div-head">
 
-      <header>
-        <div className="button-to-ASL"><ReactRouter.Link to={'/SignLanguageRecordingComponent'}>Sign Language</ReactRouter.Link></div>
-        <div className="button-to-English"><ReactRouter.Link to={'/EnglishRecordingComponent'}>English</ReactRouter.Link></div>
-        <div className="button-to-home"><ReactRouter.Link to={'/'}>Home</ReactRouter.Link></div>
-      </header>
+      <nav>
+
+        <div><ReactRouter.Link to={'/Blog'}>Blog</ReactRouter.Link></div>
+        <div><ReactRouter.Link to={'/Extra'}>Extra</ReactRouter.Link></div>
+        <div><ReactRouter.Link to={'/'}>Home</ReactRouter.Link></div>
+      </nav>
 
     </div>;
   }
