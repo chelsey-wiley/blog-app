@@ -12,10 +12,14 @@ if (window.MR === undefined) {window.MR = {};}
   var router = <Router history={ReactRouter.hashHistory}>
       <Route path="/" component={MR.Home} />
       <Route path="/Blog" component={MR.Blog}/>
-      <Route path="/Extra" component={MR.Extra}/>
+      <Route path="/Resources" component={MR.Resources}/>
+      <Route path="/Parents" component={MR.Parents}/>
+      <Route path="/Programs" component={MR.Programs}/>
+
       <Route path="/FirstPost" component={MR.FirstPost}/>
       <Route path="/Signin" component={MR.Signin}/>
       <Route path="/Contact" component={MR.Contact}/>
+
     </Router>;
 
   ReactDOM.render(router, mountNode);

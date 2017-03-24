@@ -123,16 +123,16 @@ if (window.MR === undefined) {
 }
 console.log('Blog component');
 (function () {
-  var Extra = function (_React$Component) {
-    _inherits(Extra, _React$Component);
+  var EmptyPage = function (_React$Component) {
+    _inherits(EmptyPage, _React$Component);
 
-    function Extra() {
-      _classCallCheck(this, Extra);
+    function EmptyPage() {
+      _classCallCheck(this, EmptyPage);
 
-      return _possibleConstructorReturn(this, (Extra.__proto__ || Object.getPrototypeOf(Extra)).apply(this, arguments));
+      return _possibleConstructorReturn(this, (EmptyPage.__proto__ || Object.getPrototypeOf(EmptyPage)).apply(this, arguments));
     }
 
-    _createClass(Extra, [{
+    _createClass(EmptyPage, [{
       key: "render",
       value: function render() {
 
@@ -158,10 +158,10 @@ console.log('Blog component');
       }
     }]);
 
-    return Extra;
+    return EmptyPage;
   }(React.Component);
 
-  MR.Extra = Extra;
+  MR.EmptyPage = EmptyPage;
 })();
 "use strict";
 
@@ -286,8 +286,8 @@ console.log('English component');
                 null,
                 React.createElement(
                   ReactRouter.Link,
-                  { to: '/Extra' },
-                  "Extra"
+                  { to: '/Resources' },
+                  "Resources"
                 )
               ),
               React.createElement(
@@ -295,8 +295,26 @@ console.log('English component');
                 null,
                 React.createElement(
                   ReactRouter.Link,
-                  { to: '/' },
-                  "Home"
+                  { to: '/Parents' },
+                  "Parents"
+                )
+              ),
+              React.createElement(
+                "li",
+                null,
+                React.createElement(
+                  ReactRouter.Link,
+                  { to: '/Staff' },
+                  "Staff"
+                )
+              ),
+              React.createElement(
+                "li",
+                null,
+                React.createElement(
+                  ReactRouter.Link,
+                  { to: '/Programs' },
+                  "Programs"
                 )
               )
             ),
@@ -384,6 +402,171 @@ if (window.MR === undefined) {
 }
 console.log('Blog component');
 (function () {
+  var Parents = function (_React$Component) {
+    _inherits(Parents, _React$Component);
+
+    function Parents() {
+      _classCallCheck(this, Parents);
+
+      return _possibleConstructorReturn(this, (Parents.__proto__ || Object.getPrototypeOf(Parents)).apply(this, arguments));
+    }
+
+    _createClass(Parents, [{
+      key: "render",
+      value: function render() {
+
+        return React.createElement(
+          "div",
+          { className: "page" },
+          React.createElement(MR.Header, null),
+          React.createElement(
+            "div",
+            { className: "container" },
+            React.createElement(
+              "h1",
+              null,
+              "Empty Component"
+            ),
+            React.createElement(
+              "p",
+              null,
+              "line 5 is the current component name. line 21 is the name space referencing the current component before and after the equals sign are the same. Must add the name spacing to the router js file in the client folder. "
+            )
+          )
+        );
+      }
+    }]);
+
+    return Parents;
+  }(React.Component);
+
+  MR.Parents = Parents;
+})();
+"use strict";
+
+var _createClass = function () { function defineProperties(target, props) { for (var i = 0; i < props.length; i++) { var descriptor = props[i]; descriptor.enumerable = descriptor.enumerable || false; descriptor.configurable = true; if ("value" in descriptor) descriptor.writable = true; Object.defineProperty(target, descriptor.key, descriptor); } } return function (Constructor, protoProps, staticProps) { if (protoProps) defineProperties(Constructor.prototype, protoProps); if (staticProps) defineProperties(Constructor, staticProps); return Constructor; }; }();
+
+function _classCallCheck(instance, Constructor) { if (!(instance instanceof Constructor)) { throw new TypeError("Cannot call a class as a function"); } }
+
+function _possibleConstructorReturn(self, call) { if (!self) { throw new ReferenceError("this hasn't been initialised - super() hasn't been called"); } return call && (typeof call === "object" || typeof call === "function") ? call : self; }
+
+function _inherits(subClass, superClass) { if (typeof superClass !== "function" && superClass !== null) { throw new TypeError("Super expression must either be null or a function, not " + typeof superClass); } subClass.prototype = Object.create(superClass && superClass.prototype, { constructor: { value: subClass, enumerable: false, writable: true, configurable: true } }); if (superClass) Object.setPrototypeOf ? Object.setPrototypeOf(subClass, superClass) : subClass.__proto__ = superClass; }
+
+if (window.MR === undefined) {
+  window.MR = {};
+}
+console.log('Blog component');
+(function () {
+  var Programs = function (_React$Component) {
+    _inherits(Programs, _React$Component);
+
+    function Programs() {
+      _classCallCheck(this, Programs);
+
+      return _possibleConstructorReturn(this, (Programs.__proto__ || Object.getPrototypeOf(Programs)).apply(this, arguments));
+    }
+
+    _createClass(Programs, [{
+      key: "render",
+      value: function render() {
+
+        return React.createElement(
+          "div",
+          { className: "page" },
+          React.createElement(MR.Header, null),
+          React.createElement(
+            "div",
+            { className: "container" },
+            React.createElement(
+              "h1",
+              null,
+              "Empty Component"
+            ),
+            React.createElement(
+              "p",
+              null,
+              "line 5 is the current component name. line 21 is the name space referencing the current component before and after the equals sign are the same. Must add the name spacing to the router js file in the client folder. "
+            )
+          )
+        );
+      }
+    }]);
+
+    return Programs;
+  }(React.Component);
+
+  MR.Programs = Programs;
+})();
+"use strict";
+
+var _createClass = function () { function defineProperties(target, props) { for (var i = 0; i < props.length; i++) { var descriptor = props[i]; descriptor.enumerable = descriptor.enumerable || false; descriptor.configurable = true; if ("value" in descriptor) descriptor.writable = true; Object.defineProperty(target, descriptor.key, descriptor); } } return function (Constructor, protoProps, staticProps) { if (protoProps) defineProperties(Constructor.prototype, protoProps); if (staticProps) defineProperties(Constructor, staticProps); return Constructor; }; }();
+
+function _classCallCheck(instance, Constructor) { if (!(instance instanceof Constructor)) { throw new TypeError("Cannot call a class as a function"); } }
+
+function _possibleConstructorReturn(self, call) { if (!self) { throw new ReferenceError("this hasn't been initialised - super() hasn't been called"); } return call && (typeof call === "object" || typeof call === "function") ? call : self; }
+
+function _inherits(subClass, superClass) { if (typeof superClass !== "function" && superClass !== null) { throw new TypeError("Super expression must either be null or a function, not " + typeof superClass); } subClass.prototype = Object.create(superClass && superClass.prototype, { constructor: { value: subClass, enumerable: false, writable: true, configurable: true } }); if (superClass) Object.setPrototypeOf ? Object.setPrototypeOf(subClass, superClass) : subClass.__proto__ = superClass; }
+
+if (window.MR === undefined) {
+  window.MR = {};
+}
+console.log('Blog component');
+(function () {
+  var Resources = function (_React$Component) {
+    _inherits(Resources, _React$Component);
+
+    function Resources() {
+      _classCallCheck(this, Resources);
+
+      return _possibleConstructorReturn(this, (Resources.__proto__ || Object.getPrototypeOf(Resources)).apply(this, arguments));
+    }
+
+    _createClass(Resources, [{
+      key: "render",
+      value: function render() {
+
+        return React.createElement(
+          "div",
+          { className: "page" },
+          React.createElement(MR.Header, null),
+          React.createElement(
+            "div",
+            { className: "container" },
+            React.createElement(
+              "h1",
+              null,
+              "Empty Component"
+            ),
+            React.createElement(
+              "p",
+              null,
+              "line 5 is the current component name. line 21 is the name space referencing the current component before and after the equals sign are the same. Must add the name spacing to the router js file in the client folder. "
+            )
+          )
+        );
+      }
+    }]);
+
+    return Resources;
+  }(React.Component);
+
+  MR.Resources = Resources;
+})();
+"use strict";
+
+var _createClass = function () { function defineProperties(target, props) { for (var i = 0; i < props.length; i++) { var descriptor = props[i]; descriptor.enumerable = descriptor.enumerable || false; descriptor.configurable = true; if ("value" in descriptor) descriptor.writable = true; Object.defineProperty(target, descriptor.key, descriptor); } } return function (Constructor, protoProps, staticProps) { if (protoProps) defineProperties(Constructor.prototype, protoProps); if (staticProps) defineProperties(Constructor, staticProps); return Constructor; }; }();
+
+function _classCallCheck(instance, Constructor) { if (!(instance instanceof Constructor)) { throw new TypeError("Cannot call a class as a function"); } }
+
+function _possibleConstructorReturn(self, call) { if (!self) { throw new ReferenceError("this hasn't been initialised - super() hasn't been called"); } return call && (typeof call === "object" || typeof call === "function") ? call : self; }
+
+function _inherits(subClass, superClass) { if (typeof superClass !== "function" && superClass !== null) { throw new TypeError("Super expression must either be null or a function, not " + typeof superClass); } subClass.prototype = Object.create(superClass && superClass.prototype, { constructor: { value: subClass, enumerable: false, writable: true, configurable: true } }); if (superClass) Object.setPrototypeOf ? Object.setPrototypeOf(subClass, superClass) : subClass.__proto__ = superClass; }
+
+if (window.MR === undefined) {
+  window.MR = {};
+}
+console.log('Blog component');
+(function () {
   var Signin = function (_React$Component) {
     _inherits(Signin, _React$Component);
 
@@ -424,6 +607,61 @@ console.log('Blog component');
 
   MR.Signin = Signin;
 })();
+"use strict";
+
+var _createClass = function () { function defineProperties(target, props) { for (var i = 0; i < props.length; i++) { var descriptor = props[i]; descriptor.enumerable = descriptor.enumerable || false; descriptor.configurable = true; if ("value" in descriptor) descriptor.writable = true; Object.defineProperty(target, descriptor.key, descriptor); } } return function (Constructor, protoProps, staticProps) { if (protoProps) defineProperties(Constructor.prototype, protoProps); if (staticProps) defineProperties(Constructor, staticProps); return Constructor; }; }();
+
+function _classCallCheck(instance, Constructor) { if (!(instance instanceof Constructor)) { throw new TypeError("Cannot call a class as a function"); } }
+
+function _possibleConstructorReturn(self, call) { if (!self) { throw new ReferenceError("this hasn't been initialised - super() hasn't been called"); } return call && (typeof call === "object" || typeof call === "function") ? call : self; }
+
+function _inherits(subClass, superClass) { if (typeof superClass !== "function" && superClass !== null) { throw new TypeError("Super expression must either be null or a function, not " + typeof superClass); } subClass.prototype = Object.create(superClass && superClass.prototype, { constructor: { value: subClass, enumerable: false, writable: true, configurable: true } }); if (superClass) Object.setPrototypeOf ? Object.setPrototypeOf(subClass, superClass) : subClass.__proto__ = superClass; }
+
+if (window.MR === undefined) {
+  window.MR = {};
+}
+console.log('Blog component');
+(function () {
+  var Staff = function (_React$Component) {
+    _inherits(Staff, _React$Component);
+
+    function Staff() {
+      _classCallCheck(this, Staff);
+
+      return _possibleConstructorReturn(this, (Staff.__proto__ || Object.getPrototypeOf(Staff)).apply(this, arguments));
+    }
+
+    _createClass(Staff, [{
+      key: "render",
+      value: function render() {
+
+        return React.createElement(
+          "div",
+          { className: "page" },
+          React.createElement(MR.Header, null),
+          React.createElement(
+            "div",
+            { className: "container" },
+            React.createElement(
+              "h1",
+              null,
+              "Empty Component"
+            ),
+            React.createElement(
+              "p",
+              null,
+              "line 5 is the current component name. line 21 is the name space referencing the current component before and after the equals sign are the same. Must add the name spacing to the router js file in the client folder. "
+            )
+          )
+        );
+      }
+    }]);
+
+    return Staff;
+  }(React.Component);
+
+  MR.Staff = Staff;
+})();
 'use strict';
 
 if (window.MR === undefined) {
@@ -444,7 +682,9 @@ if (window.MR === undefined) {
     { history: ReactRouter.hashHistory },
     React.createElement(Route, { path: '/', component: MR.Home }),
     React.createElement(Route, { path: '/Blog', component: MR.Blog }),
-    React.createElement(Route, { path: '/Extra', component: MR.Extra }),
+    React.createElement(Route, { path: '/Resources', component: MR.Resources }),
+    React.createElement(Route, { path: '/Parents', component: MR.Parents }),
+    React.createElement(Route, { path: '/Programs', component: MR.Programs }),
     React.createElement(Route, { path: '/FirstPost', component: MR.FirstPost }),
     React.createElement(Route, { path: '/Signin', component: MR.Signin }),
     React.createElement(Route, { path: '/Contact', component: MR.Contact })

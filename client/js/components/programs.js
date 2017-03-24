@@ -2,7 +2,7 @@ if (window.MR === undefined) {window.MR = {};}
 console.log ('Blog component');
 (function() {
 
-class EmptyPage extends React.Component {
+class Programs extends React.Component {
   render() {
 
     return (<div className="page">
@@ -18,5 +18,5 @@ class EmptyPage extends React.Component {
     </div>)
   }
 }
-  MR.EmptyPage = EmptyPage;
+  MR.Programs = Programs;
 }());

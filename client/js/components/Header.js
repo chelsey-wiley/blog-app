@@ -17,8 +17,10 @@ class Header extends React.Component {
     <div className="nav-link">
       <ul>
         <li><ReactRouter.Link to={'/Blog'}>Blog</ReactRouter.Link></li>
-        <li><ReactRouter.Link to={'/Extra'}>Extra</ReactRouter.Link></li>
-        <li><ReactRouter.Link to={'/'}>Home</ReactRouter.Link></li>
+        <li><ReactRouter.Link to={'/Resources'}>Resources</ReactRouter.Link></li>
+        <li><ReactRouter.Link to={'/Parents'}>Parents</ReactRouter.Link></li>
+        <li><ReactRouter.Link to={'/Staff'}>Staff</ReactRouter.Link></li>
+        <li><ReactRouter.Link to={'/Programs'}>Programs</ReactRouter.Link></li>
       </ul>
       <ReactRouter.Link to={'/'}><img className="logo" src="kids.png"/></ReactRouter.Link>
     </div>
