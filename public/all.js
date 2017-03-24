@@ -1,4 +1,4 @@
-'use strict';
+"use strict";
 
 var _createClass = function () { function defineProperties(target, props) { for (var i = 0; i < props.length; i++) { var descriptor = props[i]; descriptor.enumerable = descriptor.enumerable || false; descriptor.configurable = true; if ("value" in descriptor) descriptor.writable = true; Object.defineProperty(target, descriptor.key, descriptor); } } return function (Constructor, protoProps, staticProps) { if (protoProps) defineProperties(Constructor.prototype, protoProps); if (staticProps) defineProperties(Constructor, staticProps); return Constructor; }; }();
 
@@ -23,40 +23,40 @@ console.log('English component');
     }
 
     _createClass(Header, [{
-      key: 'render',
+      key: "render",
       value: function render() {
 
         return React.createElement(
-          'div',
-          { className: 'div-head' },
+          "div",
+          { className: "div-head" },
           React.createElement(
-            'nav',
-            null,
+            "ul",
+            { className: "nav-link" },
             React.createElement(
-              'div',
+              "li",
               null,
               React.createElement(
                 ReactRouter.Link,
                 { to: '/Blog' },
-                'Blog'
+                "Blog"
               )
             ),
             React.createElement(
-              'div',
+              "li",
               null,
               React.createElement(
                 ReactRouter.Link,
                 { to: '/Extra' },
-                'Extra'
+                "Extra"
               )
             ),
             React.createElement(
-              'div',
+              "li",
               null,
               React.createElement(
                 ReactRouter.Link,
                 { to: '/' },
-                'Home'
+                "Home"
               )
             )
           )
@@ -107,7 +107,7 @@ console.log('home component');
           ),
           React.createElement(
             "div",
-            null,
+            { className: "title" },
             React.createElement(
               "h1",
               null,

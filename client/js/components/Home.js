@@ -10,7 +10,7 @@ class Home extends React.Component {
       <MR.Header/>
       </header>
 
-      <div>
+      <div className="title">
       <h1>Home</h1>
       </div>
     </div>;

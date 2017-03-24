@@ -1,0 +1,12 @@
+.nav-link {
+  float: right;
+}
+.nav-link li{
+  float:right;
+  padding: 1.5em;
+  font-family: 'Coming Soon', cursive;
+  font-size: 1.5em;
+}
+.nav-link li:hover{
+  color: $green;
+}
