@@ -21,7 +21,7 @@ class Signin extends React.Component {
 
 
 
-
+      <MR.Footer/>
     </div>)
   }
 }

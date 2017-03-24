@@ -51,11 +51,27 @@ a {
   color: inherit; }
 
 body {
-  background-color: #b8edf6; }
+  background-color: #b8edf6;
+  font-family: "Raleway", sans-serif; }
 
 .page {
   max-width: 80%;
   margin: 0 auto; }
+
+.footer {
+  font-family: "Raleway", sans-serif;
+  position: fixed;
+  bottom: 10px; }
+
+.footer p {
+  margin: 0 auto; }
+
+.title {
+  font-family: 'Coming Soon', cursive;
+  font-size: 3em;
+  padding-bottom: 16px;
+  position: relative;
+  clear: both; }
 
 .nav-link {
   width: 100%;
@@ -92,11 +108,5 @@ body {
 
 .eyebrow li:hover {
   color: #c6de16; }
-
-.title {
-  font-family: 'Coming Soon', cursive;
-  font-size: 3em;
-  position: relative;
-  clear: both; }
 
 /*# sourceMappingURL=style.css.map */

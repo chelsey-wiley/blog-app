@@ -20,7 +20,7 @@ class Parents extends React.Component {
 
 
 
-
+      <MR.Footer/>
     </div>)
   }
 }

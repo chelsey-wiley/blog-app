@@ -43,7 +43,8 @@ console.log('Blog component');
               "Blog"
             )
           ),
-          React.createElement(MR.FirstPost, null)
+          React.createElement(MR.FirstPost, null),
+          React.createElement(MR.Footer, null)
         );
       }
     }]);
@@ -102,7 +103,8 @@ if (window.MR === undefined) {
             "p",
             null,
             "line 5 is the current component name. line 21 is the name space referencing the current component before and after the equals sign are the same. Must add the name spacing to the router js file in the client folder. "
-          )
+          ),
+          React.createElement(MR.Footer, null)
         );
       }
     }]);
@@ -216,6 +218,56 @@ console.log('post component');
   }(React.Component);
 
   MR.FirstPost = FirstPost;
+})();
+'use strict';
+
+var _createClass = function () { function defineProperties(target, props) { for (var i = 0; i < props.length; i++) { var descriptor = props[i]; descriptor.enumerable = descriptor.enumerable || false; descriptor.configurable = true; if ("value" in descriptor) descriptor.writable = true; Object.defineProperty(target, descriptor.key, descriptor); } } return function (Constructor, protoProps, staticProps) { if (protoProps) defineProperties(Constructor.prototype, protoProps); if (staticProps) defineProperties(Constructor, staticProps); return Constructor; }; }();
+
+function _classCallCheck(instance, Constructor) { if (!(instance instanceof Constructor)) { throw new TypeError("Cannot call a class as a function"); } }
+
+function _possibleConstructorReturn(self, call) { if (!self) { throw new ReferenceError("this hasn't been initialised - super() hasn't been called"); } return call && (typeof call === "object" || typeof call === "function") ? call : self; }
+
+function _inherits(subClass, superClass) { if (typeof superClass !== "function" && superClass !== null) { throw new TypeError("Super expression must either be null or a function, not " + typeof superClass); } subClass.prototype = Object.create(superClass && superClass.prototype, { constructor: { value: subClass, enumerable: false, writable: true, configurable: true } }); if (superClass) Object.setPrototypeOf ? Object.setPrototypeOf(subClass, superClass) : subClass.__proto__ = superClass; }
+
+if (window.MR === undefined) {
+  window.MR = {};
+}
+console.log('English component');
+(function () {
+  var Footer = function (_React$Component) {
+    _inherits(Footer, _React$Component);
+
+    function Footer() {
+      _classCallCheck(this, Footer);
+
+      return _possibleConstructorReturn(this, (Footer.__proto__ || Object.getPrototypeOf(Footer)).apply(this, arguments));
+    }
+
+    _createClass(Footer, [{
+      key: 'render',
+      value: function render() {
+
+        return React.createElement(
+          'div',
+          { className: 'footer' },
+          React.createElement(
+            'p',
+            null,
+            React.createElement(
+              ReactRouter.Link,
+              { to: '/' },
+              'Kid\'s Cottage'
+            ),
+            ' | \u200BCopyright \xA9 2017'
+          )
+        );
+      }
+    }]);
+
+    return Footer;
+  }(React.Component);
+
+  MR.Footer = Footer;
 })();
 "use strict";
 
@@ -440,7 +492,8 @@ console.log('Blog component');
             "p",
             null,
             "line 5 is the current component name. line 21 is the name space referencing the current component before and after the equals sign are the same. Must add the name spacing to the router js file in the client folder. "
-          )
+          ),
+          React.createElement(MR.Footer, null)
         );
       }
     }]);
@@ -499,7 +552,8 @@ console.log('Blog component');
             "p",
             null,
             "line 5 is the current component name. line 21 is the name space referencing the current component before and after the equals sign are the same. Must add the name spacing to the router js file in the client folder. "
-          )
+          ),
+          React.createElement(MR.Footer, null)
         );
       }
     }]);
@@ -558,7 +612,8 @@ console.log('Blog component');
             "p",
             null,
             "line 5 is the current component name. line 21 is the name space referencing the current component before and after the equals sign are the same. Must add the name spacing to the router js file in the client folder. "
-          )
+          ),
+          React.createElement(MR.Footer, null)
         );
       }
     }]);
@@ -617,7 +672,8 @@ console.log('Blog component');
             "p",
             null,
             "line 5 is the current component name. line 21 is the name space referencing the current component before and after the equals sign are the same. Must add the name spacing to the router js file in the client folder. "
-          )
+          ),
+          React.createElement(MR.Footer, null)
         );
       }
     }]);
@@ -676,7 +732,8 @@ console.log('Blog component');
             "p",
             null,
             "line 5 is the current component name. line 21 is the name space referencing the current component before and after the equals sign are the same. Must add the name spacing to the router js file in the client folder. "
-          )
+          ),
+          React.createElement(MR.Footer, null)
         );
       }
     }]);
@@ -712,7 +769,8 @@ if (window.MR === undefined) {
     React.createElement(Route, { path: '/Staff', component: MR.Staff }),
     React.createElement(Route, { path: '/FirstPost', component: MR.FirstPost }),
     React.createElement(Route, { path: '/Signin', component: MR.Signin }),
-    React.createElement(Route, { path: '/Contact', component: MR.Contact })
+    React.createElement(Route, { path: '/Contact', component: MR.Contact }),
+    React.createElement(Route, { path: '/Footer', component: MR.Footer })
   );
 
   ReactDOM.render(router, mountNode);

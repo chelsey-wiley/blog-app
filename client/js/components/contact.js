@@ -19,7 +19,7 @@ class Contact extends React.Component {
 
 
 
-
+      <MR.Footer/>
     </div>)
   }
 }

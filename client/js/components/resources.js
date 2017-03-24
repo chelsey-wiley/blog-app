@@ -19,7 +19,7 @@ class Resources extends React.Component {
 
 
 
-
+      <MR.Footer/>
     </div>)
   }
 }

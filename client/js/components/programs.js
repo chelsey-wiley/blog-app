@@ -20,7 +20,7 @@ class Programs extends React.Component {
 
 
 
-
+      <MR.Footer/>
     </div>)
   }
 }
