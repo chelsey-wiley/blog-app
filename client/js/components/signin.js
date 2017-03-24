@@ -7,11 +7,18 @@ class Signin extends React.Component {
 
     return (<div className="page">
 
+    <header>
       <MR.Header/>
-      <div className="container">
-        <h1>sign in page</h1>
-        <p>line 5 is the current component name. line 21 is the name space referencing the current component before and after the equals sign are the same. Must add the name spacing to the router js file in the client folder. </p>
+    </header>
+
+      <div className="title">
+        <h1>Sign In</h1>
       </div>
+
+      <p>line 5 is the current component name. line 21 is the name space referencing the current component before and after the equals sign are the same. Must add the name spacing to the router js file in the client folder. </p>
+
+
+
 
 
 

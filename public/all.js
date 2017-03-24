@@ -84,20 +84,24 @@ if (window.MR === undefined) {
         return React.createElement(
           "div",
           { className: "page" },
-          React.createElement(MR.Header, null),
+          React.createElement(
+            "header",
+            null,
+            React.createElement(MR.Header, null)
+          ),
           React.createElement(
             "div",
-            { className: "container" },
+            { className: "title" },
             React.createElement(
               "h1",
               null,
               "Contact"
-            ),
-            React.createElement(
-              "p",
-              null,
-              "line 5 is the current component name. line 21 is the name space referencing the current component before and after the equals sign are the same. Must add the name spacing to the router js file in the client folder. "
             )
+          ),
+          React.createElement(
+            "p",
+            null,
+            "line 5 is the current component name. line 21 is the name space referencing the current component before and after the equals sign are the same. Must add the name spacing to the router js file in the client folder. "
           )
         );
       }
@@ -418,20 +422,24 @@ console.log('Blog component');
         return React.createElement(
           "div",
           { className: "page" },
-          React.createElement(MR.Header, null),
+          React.createElement(
+            "header",
+            null,
+            React.createElement(MR.Header, null)
+          ),
           React.createElement(
             "div",
-            { className: "container" },
+            { className: "title" },
             React.createElement(
               "h1",
               null,
-              "Empty Component"
-            ),
-            React.createElement(
-              "p",
-              null,
-              "line 5 is the current component name. line 21 is the name space referencing the current component before and after the equals sign are the same. Must add the name spacing to the router js file in the client folder. "
+              "Parents"
             )
+          ),
+          React.createElement(
+            "p",
+            null,
+            "line 5 is the current component name. line 21 is the name space referencing the current component before and after the equals sign are the same. Must add the name spacing to the router js file in the client folder. "
           )
         );
       }
@@ -473,20 +481,24 @@ console.log('Blog component');
         return React.createElement(
           "div",
           { className: "page" },
-          React.createElement(MR.Header, null),
+          React.createElement(
+            "header",
+            null,
+            React.createElement(MR.Header, null)
+          ),
           React.createElement(
             "div",
-            { className: "container" },
+            { className: "title" },
             React.createElement(
               "h1",
               null,
-              "Empty Component"
-            ),
-            React.createElement(
-              "p",
-              null,
-              "line 5 is the current component name. line 21 is the name space referencing the current component before and after the equals sign are the same. Must add the name spacing to the router js file in the client folder. "
+              "Programs"
             )
+          ),
+          React.createElement(
+            "p",
+            null,
+            "line 5 is the current component name. line 21 is the name space referencing the current component before and after the equals sign are the same. Must add the name spacing to the router js file in the client folder. "
           )
         );
       }
@@ -528,20 +540,24 @@ console.log('Blog component');
         return React.createElement(
           "div",
           { className: "page" },
-          React.createElement(MR.Header, null),
+          React.createElement(
+            "header",
+            null,
+            React.createElement(MR.Header, null)
+          ),
           React.createElement(
             "div",
-            { className: "container" },
+            { className: "title" },
             React.createElement(
               "h1",
               null,
-              "Empty Component"
-            ),
-            React.createElement(
-              "p",
-              null,
-              "line 5 is the current component name. line 21 is the name space referencing the current component before and after the equals sign are the same. Must add the name spacing to the router js file in the client folder. "
+              "Resources"
             )
+          ),
+          React.createElement(
+            "p",
+            null,
+            "line 5 is the current component name. line 21 is the name space referencing the current component before and after the equals sign are the same. Must add the name spacing to the router js file in the client folder. "
           )
         );
       }
@@ -583,20 +599,24 @@ console.log('Blog component');
         return React.createElement(
           "div",
           { className: "page" },
-          React.createElement(MR.Header, null),
+          React.createElement(
+            "header",
+            null,
+            React.createElement(MR.Header, null)
+          ),
           React.createElement(
             "div",
-            { className: "container" },
+            { className: "title" },
             React.createElement(
               "h1",
               null,
-              "sign in page"
-            ),
-            React.createElement(
-              "p",
-              null,
-              "line 5 is the current component name. line 21 is the name space referencing the current component before and after the equals sign are the same. Must add the name spacing to the router js file in the client folder. "
+              "Sign In"
             )
+          ),
+          React.createElement(
+            "p",
+            null,
+            "line 5 is the current component name. line 21 is the name space referencing the current component before and after the equals sign are the same. Must add the name spacing to the router js file in the client folder. "
           )
         );
       }
@@ -638,20 +658,24 @@ console.log('Blog component');
         return React.createElement(
           "div",
           { className: "page" },
-          React.createElement(MR.Header, null),
+          React.createElement(
+            "header",
+            null,
+            React.createElement(MR.Header, null)
+          ),
           React.createElement(
             "div",
-            { className: "container" },
+            { className: "title" },
             React.createElement(
               "h1",
               null,
-              "Empty Component"
-            ),
-            React.createElement(
-              "p",
-              null,
-              "line 5 is the current component name. line 21 is the name space referencing the current component before and after the equals sign are the same. Must add the name spacing to the router js file in the client folder. "
+              "Staff"
             )
+          ),
+          React.createElement(
+            "p",
+            null,
+            "line 5 is the current component name. line 21 is the name space referencing the current component before and after the equals sign are the same. Must add the name spacing to the router js file in the client folder. "
           )
         );
       }
@@ -685,6 +709,7 @@ if (window.MR === undefined) {
     React.createElement(Route, { path: '/Resources', component: MR.Resources }),
     React.createElement(Route, { path: '/Parents', component: MR.Parents }),
     React.createElement(Route, { path: '/Programs', component: MR.Programs }),
+    React.createElement(Route, { path: '/Staff', component: MR.Staff }),
     React.createElement(Route, { path: '/FirstPost', component: MR.FirstPost }),
     React.createElement(Route, { path: '/Signin', component: MR.Signin }),
     React.createElement(Route, { path: '/Contact', component: MR.Contact })
