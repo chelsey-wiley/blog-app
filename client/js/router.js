@@ -14,6 +14,8 @@ if (window.MR === undefined) {window.MR = {};}
       <Route path="/Blog" component={MR.Blog}/>
       <Route path="/Extra" component={MR.Extra}/>
       <Route path="/FirstPost" component={MR.FirstPost}/>
+      <Route path="/Signin" component={MR.Signin}/>
+      <Route path="/Contact" component={MR.Contact}/>
     </Router>;
 
   ReactDOM.render(router, mountNode);

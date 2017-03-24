@@ -1,12 +1,42 @@
 .nav-link {
+  width: 100%;
   float: right;
+  clear: both;
+  border-bottom: 3px solid $darkblue;
+  margin-bottom: 2em;
+  margin-top: 2em;
+  background-color: rgba(255,255,255,.3);
 }
+
 .nav-link li{
-  float:right;
+float: right;
   padding: 1.5em;
-  font-family: 'Coming Soon', cursive;
+  font-family: $headerfont;
   font-size: 1.5em;
 }
 .nav-link li:hover{
+  color: $green;
+}
+
+.logo{
+  float:left;
+  width: 100px;
+  padding:10px;
+}
+
+
+.eyebrow {
+  margin-top: 1em;
+  float: right;
+}
+
+.eyebrow li{
+  color: $darkblue;
+  float: left;
+  padding-right: 2em;
+  font-family: $bodyfont;
+}
+
+.eyebrow li:hover{
   color: $green;
 }

@@ -50,16 +50,47 @@ a {
   text-decoration: none;
   color: inherit; }
 
+body {
+  background-color: #b8edf6; }
+
+.page {
+  max-width: 80%;
+  margin: 0 auto; }
+
 .nav-link {
-  float: right; }
+  width: 100%;
+  float: right;
+  clear: both;
+  border-bottom: 3px solid #177ddf;
+  margin-bottom: 2em;
+  margin-top: 2em;
+  background-color: rgba(255, 255, 255, 0.3); }
 
 .nav-link li {
   float: right;
   padding: 1.5em;
-  font-family: 'Coming Soon', cursive;
+  font-family: "Coming Soon", cursive;
   font-size: 1.5em; }
 
 .nav-link li:hover {
+  color: #c6de16; }
+
+.logo {
+  float: left;
+  width: 100px;
+  padding: 10px; }
+
+.eyebrow {
+  margin-top: 1em;
+  float: right; }
+
+.eyebrow li {
+  color: #177ddf;
+  float: left;
+  padding-right: 2em;
+  font-family: "Raleway", sans-serif; }
+
+.eyebrow li:hover {
   color: #c6de16; }
 
 .title {

@@ -6,12 +6,12 @@ class Blog extends React.Component {
   render() {
 
     return (<div className="page">
-
+    <header>
       <MR.Header/>
+    </header>
 
-      <div className="container">
+      <div className="title">
         <h1>Blog</h1>
-        <p>Blog stuff goes here</p>
       </div>
 
       <MR.FirstPost/>
