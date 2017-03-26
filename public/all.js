@@ -43,7 +43,11 @@ console.log('Blog component');
               "Blog"
             )
           ),
-          React.createElement(MR.FirstPost, null),
+          React.createElement(
+            "div",
+            { className: "blog-posts" },
+            React.createElement(MR.FirstPost, null)
+          ),
           React.createElement(MR.Footer, null)
         );
       }
@@ -201,14 +205,61 @@ console.log('post component');
           "div",
           { className: "post" },
           React.createElement(
-            "h1",
-            null,
-            "First Post"
+            "div",
+            { className: "post-body" },
+            React.createElement(
+              "h1",
+              { className: "post-title" },
+              "First Post"
+            ),
+            React.createElement(
+              "h4",
+              { className: "post-date" },
+              "3.13.17"
+            ),
+            React.createElement("img", { className: "post-image", src: "img-placeholder.jpg" }),
+            React.createElement(
+              "p",
+              { className: "post-summary" },
+              "Post Summary Goes Here. This is a story, and it's a good story. It's about something really really stupendious. Something you have probably never heard of before. Bit it starts like this, a long time ago."
+            ),
+            React.createElement(
+              "div",
+              { className: "post-story" },
+              React.createElement(
+                "p",
+                { className: "read-more" },
+                "Read the full post..."
+              ),
+              React.createElement(
+                "p",
+                null,
+                "Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum. Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum. "
+              )
+            )
           ),
           React.createElement(
-            "p",
-            null,
-            "line 5 is the current component name. line 21 is the name space referencing the current component before and after the equals sign are the same. Must add the name spacing to the router js file in the client folder. "
+            "div",
+            { className: "post-sidebar" },
+            React.createElement(
+              "ul",
+              null,
+              React.createElement(
+                "li",
+                null,
+                "Most Viewed"
+              ),
+              React.createElement(
+                "li",
+                null,
+                " Most Commented"
+              ),
+              React.createElement(
+                "li",
+                null,
+                " Most Shared"
+              )
+            )
           )
         );
       }
@@ -282,7 +333,7 @@ function _inherits(subClass, superClass) { if (typeof superClass !== "function" 
 if (window.MR === undefined) {
   window.MR = {};
 }
-console.log('English component');
+
 (function () {
   var Header = function (_React$Component) {
     _inherits(Header, _React$Component);

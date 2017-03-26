@@ -14,7 +14,10 @@ class Blog extends React.Component {
         <h1>Blog</h1>
       </div>
 
-      <MR.FirstPost/>
+      <div className="blog-posts">
+        <MR.FirstPost/>
+      </div>
+
 
 
       <MR.Footer/>

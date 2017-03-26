@@ -1,5 +1,5 @@
 if (window.MR === undefined) {window.MR = {};}
-console.log ('English component');
+
 (function() {
 
 class Header extends React.Component {
