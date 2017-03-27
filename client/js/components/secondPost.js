@@ -8,52 +8,52 @@ class SecondPost extends React.Component {
 
   constructor(props) {
   super(props);
-  this.handleLoginClick = this.handleLoginClick.bind(this);
-  this.handleLogoutClick = this.handleLogoutClick.bind(this);
+  this.handleReadMore = this.handleReadMore.bind(this);
+  this.handleReadLess = this.handleReadLess.bind(this);
   this.state = {isLoggedIn: false};
   }
 
-  handleLoginClick() {
+handleReadMore() {
   this.setState({isLoggedIn: true});
   }
 
-  handleLogoutClick() {
+  handleReadLess() {
   this.setState({isLoggedIn: false});
   }
 
   render() {
     const isLoggedIn = this.state.isLoggedIn;
 
-    let button = null;
+    let div = null;
     if (isLoggedIn) {
-      button = <LogoutButton onClick={this.handleLogoutClick} />;
+      div = <LogoutButton onClick={this.handleReadLess} />;
     } else {
-      button = <LoginButton onClick={this.handleLoginClick} />;
+      div = <LoginButton onClick={this.handleReadMore} />;
     }
 
     return (
       <div>
-        {button}
-        <Greeting isLoggedIn={isLoggedIn} />
+        {div}
+        <Phrase isLoggedIn={isLoggedIn} />
       </div>
     );
   }
 }
 
-function UserGreeting(props) {
+function Contract(props) {
   return <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.</p>;
 }
 
-function GuestGreeting(props) {
+function Expand(props) {
   return <p>...</p>;
 }
 
-function Greeting(props) {
+function Phrase (props) {
   const isLoggedIn = props.isLoggedIn;
   if (isLoggedIn) {
-    return <UserGreeting />;
+    return <Contract />;
   }
-  return <GuestGreeting />;
+  return <Expand />;
 }
 
 function LoginButton(props) {

@@ -726,20 +726,20 @@ console.log('post component');
 
       var _this = _possibleConstructorReturn(this, (SecondPost.__proto__ || Object.getPrototypeOf(SecondPost)).call(this, props));
 
-      _this.handleLoginClick = _this.handleLoginClick.bind(_this);
-      _this.handleLogoutClick = _this.handleLogoutClick.bind(_this);
+      _this.handleReadMore = _this.handleReadMore.bind(_this);
+      _this.handleReadLess = _this.handleReadLess.bind(_this);
       _this.state = { isLoggedIn: false };
       return _this;
     }
 
     _createClass(SecondPost, [{
-      key: 'handleLoginClick',
-      value: function handleLoginClick() {
+      key: 'handleReadMore',
+      value: function handleReadMore() {
         this.setState({ isLoggedIn: true });
       }
     }, {
-      key: 'handleLogoutClick',
-      value: function handleLogoutClick() {
+      key: 'handleReadLess',
+      value: function handleReadLess() {
         this.setState({ isLoggedIn: false });
       }
     }, {
@@ -747,18 +747,18 @@ console.log('post component');
       value: function render() {
         var isLoggedIn = this.state.isLoggedIn;
 
-        var button = null;
+        var div = null;
         if (isLoggedIn) {
-          button = React.createElement(LogoutButton, { onClick: this.handleLogoutClick });
+          div = React.createElement(LogoutButton, { onClick: this.handleReadLess });
         } else {
-          button = React.createElement(LoginButton, { onClick: this.handleLoginClick });
+          div = React.createElement(LoginButton, { onClick: this.handleReadMore });
         }
 
         return React.createElement(
           'div',
           null,
-          button,
-          React.createElement(Greeting, { isLoggedIn: isLoggedIn })
+          div,
+          React.createElement(Phrase, { isLoggedIn: isLoggedIn })
         );
       }
     }]);
@@ -766,7 +766,7 @@ console.log('post component');
     return SecondPost;
   }(React.Component);
 
-  function UserGreeting(props) {
+  function Contract(props) {
     return React.createElement(
       'p',
       null,
@@ -774,7 +774,7 @@ console.log('post component');
     );
   }
 
-  function GuestGreeting(props) {
+  function Expand(props) {
     return React.createElement(
       'p',
       null,
@@ -782,12 +782,12 @@ console.log('post component');
     );
   }
 
-  function Greeting(props) {
+  function Phrase(props) {
     var isLoggedIn = props.isLoggedIn;
     if (isLoggedIn) {
-      return React.createElement(UserGreeting, null);
+      return React.createElement(Contract, null);
     }
-    return React.createElement(GuestGreeting, null);
+    return React.createElement(Expand, null);
   }
 
   function LoginButton(props) {
