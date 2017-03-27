@@ -22,7 +22,7 @@ class Header extends React.Component {
         <li><ReactRouter.Link to={'/Staff'}>Staff</ReactRouter.Link></li>
         <li><ReactRouter.Link to={'/Programs'}>Programs</ReactRouter.Link></li>
       </ul>
-      <ReactRouter.Link to={'/'}><img className="logo" src="kids.png"/></ReactRouter.Link>
+      <ReactRouter.Link to={'/'}><img className="logo" src="kidsfav.png"/></ReactRouter.Link>
     </div>
 
 

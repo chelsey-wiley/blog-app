@@ -51,8 +51,8 @@ a {
   color: inherit; }
 
 body {
-  background-color: #b8edf6;
-  font-family: "Raleway", sans-serif; }
+  font-family: "Raleway", sans-serif;
+  background-color: #b8edf6; }
 
 .page {
   max-width: 80%;
@@ -84,10 +84,12 @@ body {
   width: 100%;
   float: right;
   clear: both;
-  border-bottom: 3px solid #177ddf;
+  border-bottom: 5px solid #177ddf;
   margin-bottom: 2em;
   margin-top: 2em;
-  background-color: rgba(255, 255, 255, 0.3); }
+  background-color: rgba(255, 255, 255, 0.3);
+  border-top-right-radius: 5px;
+  border-top-left-radius: 5px; }
 
 .nav-link li {
   float: right;
@@ -117,8 +119,8 @@ body {
   color: #c6de16; }
 
 .post-title {
-  font-size: 1.5em;
-  line-height: 1.5em;
+  font-size: 1.6em;
+  line-height: 1.6em;
   color: #ee672f;
   padding-top: 24px; }
 
@@ -133,25 +135,38 @@ body {
 
 .post-body {
   float: left;
-  max-width: 76%;
-  border-right: 1px solid #177ddf;
+  max-width: 70%;
+  border-right: 3px solid rgba(23, 125, 223, 0.3);
   padding-right: 7%; }
 
 .post-sidebar {
   float: right;
-  max-width: 20%;
+  max-width: 25%;
   font-size: 1.2em;
-  line-height: 1.2em; }
+  line-height: 1.2em;
+  padding-left: 2%; }
+
+.post-sidebar button {
+  margin-top: 20px;
+  height: 48px;
+  background-color: #ee672f;
+  font-family: "Raleway", sans-serif;
+  font-size: .8em;
+  border-radius: 5px; }
+
+.post-sidebar button:hover {
+  background-color: rgba(255, 255, 255, 0.3);
+  color: #ee672f; }
 
 .post-summary {
   padding: 2% 0%;
-  font-size: 1.2em;
-  line-height: 1.2em; }
+  font-size: 1.1em;
+  line-height: 1.1em; }
 
 .read-more {
   padding: 2% 0%;
-  font-size: 1.2em;
-  line-height: 1.2em; }
+  font-size: 1.1em;
+  line-height: 1.1em; }
 
 .post-story p {
   line-height: 1.2em; }

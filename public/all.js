@@ -67,6 +67,11 @@ console.log('Blog component');
                   null,
                   " Most Shared"
                 )
+              ),
+              React.createElement(
+                "button",
+                null,
+                "Subscribe to our Newsletter "
               )
             ),
             React.createElement(MR.FirstPost, null),
@@ -441,7 +446,7 @@ if (window.MR === undefined) {
             React.createElement(
               ReactRouter.Link,
               { to: '/' },
-              React.createElement("img", { className: "logo", src: "kids.png" })
+              React.createElement("img", { className: "logo", src: "kidsfav.png" })
             )
           )
         );
