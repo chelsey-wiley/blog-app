@@ -19,7 +19,8 @@ Build on CMS to allow Kid’s Cottage to have more control
 Implement google analytics to track user data
 Implement a Blog Site as a simple solution to keep parents involved.
 As business grows integrate login and portal features - no CMS as project is on going
- - Impact
+ - Impact: <br>
+ Parents feel more engaged with the staff, leading to an increase in referrals and retention.
 
 ## Design Criteria:
 - Global Header<br>
