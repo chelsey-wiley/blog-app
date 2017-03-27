@@ -19,6 +19,8 @@ if (window.MR === undefined) {window.MR = {};}
 
       <Route path="/FirstPost" component={MR.FirstPost}/>
         <Route path="/FirstPostStory" component={MR.FirstPostStory}/>
+      <Route path="/ScondPost" component={MR.SecondPost}/>
+        <Route path="/SecondPostStory" component={MR.SecondPostStory}/>  
 
 
       <Route path="/Signin" component={MR.Signin}/>

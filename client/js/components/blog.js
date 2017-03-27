@@ -3,6 +3,7 @@ console.log ('Blog component');
 (function() {
 
 class Blog extends React.Component {
+
   render() {
 
     return (<div className="page">
@@ -24,6 +25,7 @@ class Blog extends React.Component {
       </div>
 
     <MR.FirstPost/>
+    <MR.SecondPost/>
     </div>
 
       <MR.Footer/>

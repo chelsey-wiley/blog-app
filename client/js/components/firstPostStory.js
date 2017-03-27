@@ -43,8 +43,6 @@ handleReadMore() {
 function Contract(props) {
   return <div>
 
-    <p>Many early childhood educators, myself included, believe that every classroom should have a full set of unit blocks, assorted props tied to children’s current interests and experiences, open storage shelves, and plenty of space and time to build and rebuild invented and familiar structures. I canvassed NAEYC staff and Young Children consulting editors to ask, “What do you think children learn through block play?” Here are some responses:</p>
-
     <ol>
       <li>Problem solving. Sometimes it is intentional: “I want to build X. How do I do that?” Other times it is in-the-moment: “To go higher and add to one side, what can I use?”—Peter Pizzolongo </li>
 
@@ -69,7 +67,7 @@ function Contract(props) {
 
       <p> —Derry Koralek, Chief Publishing Officer and Editor in Chief</p>
     </ol>
-    {/* Filler Story: http://www.naeyc.org/yc/10_things_children_learn_block_play */} 
+    {/* Filler Story: http://www.naeyc.org/yc/10_things_children_learn_block_play */}
 </div>;
 }
 

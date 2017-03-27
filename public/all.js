@@ -74,7 +74,8 @@ console.log('Blog component');
                 "Subscribe to our Newsletter "
               )
             ),
-            React.createElement(MR.FirstPost, null)
+            React.createElement(MR.FirstPost, null),
+            React.createElement(MR.SecondPost, null)
           ),
           React.createElement(MR.Footer, null)
         );
@@ -247,7 +248,7 @@ console.log('post component');
             React.createElement(
               'h1',
               { className: 'post-title' },
-              'First Post'
+              'Essential Building Blocks'
             ),
             React.createElement(
               'h4',
@@ -258,7 +259,7 @@ console.log('post component');
             React.createElement(
               'p',
               { className: 'post-summary' },
-              'Post Summary Goes Here. This is a story, and it\'s a good story. It\'s about something really really stupendious. Something you have probably never heard of before. Bit it starts like this, a long time ago.'
+              'Many early childhood educators, myself included, believe that every classroom should have a full set of unit blocks, assorted props tied to children\u2019s current interests and experiences, open storage shelves, and plenty of space and time to build and rebuild invented and familiar structures. I canvassed NAEYC staff and Young Children consulting editors to ask, \u201CWhat do you think children learn through block play?\u201D Here are some responses:'
             ),
             React.createElement(
               'div',
@@ -342,11 +343,6 @@ console.log('post component');
     return React.createElement(
       "div",
       null,
-      React.createElement(
-        "p",
-        null,
-        "Many early childhood educators, myself included, believe that every classroom should have a full set of unit blocks, assorted props tied to children\u2019s current interests and experiences, open storage shelves, and plenty of space and time to build and rebuild invented and familiar structures. I canvassed NAEYC staff and Young Children consulting editors to ask, \u201CWhat do you think children learn through block play?\u201D Here are some responses:"
-      ),
       React.createElement(
         "ol",
         null,
@@ -740,6 +736,173 @@ function _inherits(subClass, superClass) { if (typeof superClass !== "function" 
 if (window.MR === undefined) {
   window.MR = {};
 }
+console.log('post component');
+(function () {
+  var PostStoryTemplate = function (_React$Component) {
+    _inherits(PostStoryTemplate, _React$Component);
+
+    function PostStoryTemplate(props) {
+      _classCallCheck(this, PostStoryTemplate);
+
+      var _this = _possibleConstructorReturn(this, (PostStoryTemplate.__proto__ || Object.getPrototypeOf(PostStoryTemplate)).call(this, props));
+
+      _this.handleReadMore = _this.handleReadMore.bind(_this);
+      _this.handleReadLess = _this.handleReadLess.bind(_this);
+      _this.state = { isExpanded: false };
+      return _this;
+    }
+
+    _createClass(PostStoryTemplate, [{
+      key: "handleReadMore",
+      value: function handleReadMore() {
+        this.setState({ isExpanded: true });
+      }
+    }, {
+      key: "handleReadLess",
+      value: function handleReadLess() {
+        this.setState({ isExpanded: false });
+      }
+    }, {
+      key: "render",
+      value: function render() {
+        var isExpanded = this.state.isExpanded;
+
+        var div = null;
+        if (isExpanded) {
+          div = React.createElement(ReadLessButton, { onClick: this.handleReadLess });
+        } else {
+          div = React.createElement(ReadMoreButton, { onClick: this.handleReadMore });
+        }
+
+        return React.createElement(
+          "div",
+          null,
+          div,
+          React.createElement(Phrase, { isExpanded: isExpanded })
+        );
+      }
+    }]);
+
+    return PostStoryTemplate;
+  }(React.Component);
+
+  function Contract(props) {
+    return React.createElement("div", null);
+  }
+
+  function Expand(props) {
+    return React.createElement("p", null);
+  }
+
+  function Phrase(props) {
+    var isExpanded = props.isExpanded;
+    if (isExpanded) {
+      return React.createElement(Contract, null);
+    }
+    return React.createElement(Expand, null);
+  }
+
+  function ReadMoreButton(props) {
+    return React.createElement(
+      "div",
+      { className: "read-it", onClick: props.onClick },
+      "Read More"
+    );
+  }
+
+  function ReadLessButton(props) {
+    return React.createElement(
+      "div",
+      { className: "read-it", onClick: props.onClick },
+      "Read Less"
+    );
+  }
+
+  MR.PostStoryTemplate = PostStoryTemplate;
+})();
+'use strict';
+
+var _createClass = function () { function defineProperties(target, props) { for (var i = 0; i < props.length; i++) { var descriptor = props[i]; descriptor.enumerable = descriptor.enumerable || false; descriptor.configurable = true; if ("value" in descriptor) descriptor.writable = true; Object.defineProperty(target, descriptor.key, descriptor); } } return function (Constructor, protoProps, staticProps) { if (protoProps) defineProperties(Constructor.prototype, protoProps); if (staticProps) defineProperties(Constructor, staticProps); return Constructor; }; }();
+
+function _classCallCheck(instance, Constructor) { if (!(instance instanceof Constructor)) { throw new TypeError("Cannot call a class as a function"); } }
+
+function _possibleConstructorReturn(self, call) { if (!self) { throw new ReferenceError("this hasn't been initialised - super() hasn't been called"); } return call && (typeof call === "object" || typeof call === "function") ? call : self; }
+
+function _inherits(subClass, superClass) { if (typeof superClass !== "function" && superClass !== null) { throw new TypeError("Super expression must either be null or a function, not " + typeof superClass); } subClass.prototype = Object.create(superClass && superClass.prototype, { constructor: { value: subClass, enumerable: false, writable: true, configurable: true } }); if (superClass) Object.setPrototypeOf ? Object.setPrototypeOf(subClass, superClass) : subClass.__proto__ = superClass; }
+
+if (window.MR === undefined) {
+  window.MR = {};
+}
+console.log('post component');
+(function () {
+  var PostTemplate = function (_React$Component) {
+    _inherits(PostTemplate, _React$Component);
+
+    function PostTemplate() {
+      _classCallCheck(this, PostTemplate);
+
+      return _possibleConstructorReturn(this, (PostTemplate.__proto__ || Object.getPrototypeOf(PostTemplate)).apply(this, arguments));
+    }
+
+    _createClass(PostTemplate, [{
+      key: 'clickReadMore',
+      value: function clickReadMore(classname) {
+        console.log('clicked it');
+      }
+    }, {
+      key: 'render',
+      value: function render() {
+
+        return React.createElement(
+          'div',
+          { className: 'post' },
+          React.createElement(
+            'div',
+            { className: 'post-body' },
+            React.createElement(
+              'h1',
+              { className: 'post-title' },
+              'First Post'
+            ),
+            React.createElement(
+              'h4',
+              { className: 'post-date' },
+              '3.13.17'
+            ),
+            React.createElement('img', { className: 'post-image', src: 'kcStockImg1.jpg' }),
+            React.createElement(
+              'p',
+              { className: 'post-summary' },
+              'Post Summary Goes Here.'
+            ),
+            React.createElement(
+              'div',
+              { className: 'post-story' },
+              React.createElement(MR.FirstPostStory, null)
+            )
+          )
+        );
+      }
+    }]);
+
+    return PostTemplate;
+  }(React.Component);
+
+  MR.PostTemplate = PostTemplate;
+})();
+"use strict";
+
+var _createClass = function () { function defineProperties(target, props) { for (var i = 0; i < props.length; i++) { var descriptor = props[i]; descriptor.enumerable = descriptor.enumerable || false; descriptor.configurable = true; if ("value" in descriptor) descriptor.writable = true; Object.defineProperty(target, descriptor.key, descriptor); } } return function (Constructor, protoProps, staticProps) { if (protoProps) defineProperties(Constructor.prototype, protoProps); if (staticProps) defineProperties(Constructor, staticProps); return Constructor; }; }();
+
+function _classCallCheck(instance, Constructor) { if (!(instance instanceof Constructor)) { throw new TypeError("Cannot call a class as a function"); } }
+
+function _possibleConstructorReturn(self, call) { if (!self) { throw new ReferenceError("this hasn't been initialised - super() hasn't been called"); } return call && (typeof call === "object" || typeof call === "function") ? call : self; }
+
+function _inherits(subClass, superClass) { if (typeof superClass !== "function" && superClass !== null) { throw new TypeError("Super expression must either be null or a function, not " + typeof superClass); } subClass.prototype = Object.create(superClass && superClass.prototype, { constructor: { value: subClass, enumerable: false, writable: true, configurable: true } }); if (superClass) Object.setPrototypeOf ? Object.setPrototypeOf(subClass, superClass) : subClass.__proto__ = superClass; }
+
+if (window.MR === undefined) {
+  window.MR = {};
+}
 console.log('Blog component');
 (function () {
   var Programs = function (_React$Component) {
@@ -854,6 +1017,235 @@ console.log('Blog component');
   }(React.Component);
 
   MR.Resources = Resources;
+})();
+'use strict';
+
+var _createClass = function () { function defineProperties(target, props) { for (var i = 0; i < props.length; i++) { var descriptor = props[i]; descriptor.enumerable = descriptor.enumerable || false; descriptor.configurable = true; if ("value" in descriptor) descriptor.writable = true; Object.defineProperty(target, descriptor.key, descriptor); } } return function (Constructor, protoProps, staticProps) { if (protoProps) defineProperties(Constructor.prototype, protoProps); if (staticProps) defineProperties(Constructor, staticProps); return Constructor; }; }();
+
+function _classCallCheck(instance, Constructor) { if (!(instance instanceof Constructor)) { throw new TypeError("Cannot call a class as a function"); } }
+
+function _possibleConstructorReturn(self, call) { if (!self) { throw new ReferenceError("this hasn't been initialised - super() hasn't been called"); } return call && (typeof call === "object" || typeof call === "function") ? call : self; }
+
+function _inherits(subClass, superClass) { if (typeof superClass !== "function" && superClass !== null) { throw new TypeError("Super expression must either be null or a function, not " + typeof superClass); } subClass.prototype = Object.create(superClass && superClass.prototype, { constructor: { value: subClass, enumerable: false, writable: true, configurable: true } }); if (superClass) Object.setPrototypeOf ? Object.setPrototypeOf(subClass, superClass) : subClass.__proto__ = superClass; }
+
+if (window.MR === undefined) {
+  window.MR = {};
+}
+console.log('post component');
+(function () {
+  var SecondPost = function (_React$Component) {
+    _inherits(SecondPost, _React$Component);
+
+    function SecondPost() {
+      _classCallCheck(this, SecondPost);
+
+      return _possibleConstructorReturn(this, (SecondPost.__proto__ || Object.getPrototypeOf(SecondPost)).apply(this, arguments));
+    }
+
+    _createClass(SecondPost, [{
+      key: 'clickReadMore',
+      value: function clickReadMore(classname) {
+        console.log('clicked it');
+      }
+    }, {
+      key: 'render',
+      value: function render() {
+
+        return React.createElement(
+          'div',
+          { className: 'post' },
+          React.createElement(
+            'div',
+            { className: 'post-body' },
+            React.createElement(
+              'h1',
+              { className: 'post-title' },
+              'Kid\'s Fitness: Just do it!'
+            ),
+            React.createElement(
+              'h4',
+              { className: 'post-date' },
+              '3.13.17'
+            ),
+            React.createElement('img', { className: 'post-image', src: 'kcStockImg3.jpg' }),
+            React.createElement(
+              'p',
+              { className: 'post-summary' },
+              'When many people decide to "get fit," they assume it involves rigorous activity. But you don\'t have to spend hours in a gym to be physically active. People can get in shape by performing everyday activities in the home. Every time you and your child throw a softball, swim a lap, climb a flight of stairs, walk to the store, or carry packages, your health and fitness levels are improving.'
+            ),
+            React.createElement(
+              'div',
+              { className: 'post-story' },
+              React.createElement(MR.SecondPostStory, null)
+            )
+          )
+        );
+      }
+    }]);
+
+    return SecondPost;
+  }(React.Component);
+
+  MR.SecondPost = SecondPost;
+})();
+"use strict";
+
+var _createClass = function () { function defineProperties(target, props) { for (var i = 0; i < props.length; i++) { var descriptor = props[i]; descriptor.enumerable = descriptor.enumerable || false; descriptor.configurable = true; if ("value" in descriptor) descriptor.writable = true; Object.defineProperty(target, descriptor.key, descriptor); } } return function (Constructor, protoProps, staticProps) { if (protoProps) defineProperties(Constructor.prototype, protoProps); if (staticProps) defineProperties(Constructor, staticProps); return Constructor; }; }();
+
+function _classCallCheck(instance, Constructor) { if (!(instance instanceof Constructor)) { throw new TypeError("Cannot call a class as a function"); } }
+
+function _possibleConstructorReturn(self, call) { if (!self) { throw new ReferenceError("this hasn't been initialised - super() hasn't been called"); } return call && (typeof call === "object" || typeof call === "function") ? call : self; }
+
+function _inherits(subClass, superClass) { if (typeof superClass !== "function" && superClass !== null) { throw new TypeError("Super expression must either be null or a function, not " + typeof superClass); } subClass.prototype = Object.create(superClass && superClass.prototype, { constructor: { value: subClass, enumerable: false, writable: true, configurable: true } }); if (superClass) Object.setPrototypeOf ? Object.setPrototypeOf(subClass, superClass) : subClass.__proto__ = superClass; }
+
+if (window.MR === undefined) {
+  window.MR = {};
+}
+console.log('post component');
+(function () {
+  var SecondPostStory = function (_React$Component) {
+    _inherits(SecondPostStory, _React$Component);
+
+    function SecondPostStory(props) {
+      _classCallCheck(this, SecondPostStory);
+
+      var _this = _possibleConstructorReturn(this, (SecondPostStory.__proto__ || Object.getPrototypeOf(SecondPostStory)).call(this, props));
+
+      _this.handleReadMore = _this.handleReadMore.bind(_this);
+      _this.handleReadLess = _this.handleReadLess.bind(_this);
+      _this.state = { isExpanded: false };
+      return _this;
+    }
+
+    _createClass(SecondPostStory, [{
+      key: "handleReadMore",
+      value: function handleReadMore() {
+        this.setState({ isExpanded: true });
+      }
+    }, {
+      key: "handleReadLess",
+      value: function handleReadLess() {
+        this.setState({ isExpanded: false });
+      }
+    }, {
+      key: "render",
+      value: function render() {
+        var isExpanded = this.state.isExpanded;
+
+        var div = null;
+        if (isExpanded) {
+          div = React.createElement(ReadLessButton, { onClick: this.handleReadLess });
+        } else {
+          div = React.createElement(ReadMoreButton, { onClick: this.handleReadMore });
+        }
+
+        return React.createElement(
+          "div",
+          null,
+          div,
+          React.createElement(Phrase, { isExpanded: isExpanded })
+        );
+      }
+    }]);
+
+    return SecondPostStory;
+  }(React.Component);
+
+  function Contract(props) {
+    return React.createElement(
+      "div",
+      null,
+      React.createElement(
+        "p",
+        null,
+        " When someone is physically fit, she feels and looks better, and she stays healthier. The earlier a child starts getting in shape, the more she'll reduce her risk of numerous illnesses. Here are some of the benefits that physical activity offers your child:"
+      ),
+      React.createElement(
+        "ol",
+        null,
+        React.createElement(
+          "li",
+          null,
+          " It strengthens the heart. The heart is a muscle. Like other muscles, its performance improves when it's regularly challenged by exercise. The heart responds to exercise by becoming stronger and more efficient. Strengthening the heart muscle can help ward off heart disease -- the leading cause of death in the United States, according to the U.S. Department of Health and Human Services -- even in early childhood."
+        ),
+        React.createElement(
+          "li",
+          null,
+          "  It helps keep arteries and veins clear. Exercise reduces the amount of harmful cholesterol and fats in a person's blood. It increases the flexibility of the walls of blood vessels, and helps to lower blood pressure. This can reduce a person's risk for heart attack and stroke. "
+        ),
+        React.createElement(
+          "li",
+          null,
+          " It strengthens the lungs. Working hard increases lung capacity, and their efficiency in moving air in and out of the body. As a result, more oxygen is drawn into the body and more carbon dioxide and other waste gases are expelled. Regular exercise helps prevent the decline in oxygen intake that occurs naturally with age or as a result of inactivity."
+        ),
+        React.createElement(
+          "li",
+          null,
+          " It reduces blood sugar levels. Exercise prevents sugar from accumulating in the blood by triggering muscles to take up more glucose from the bloodstream and use it for energy. This can reduce a person's risk of developing diabetes."
+        ),
+        React.createElement(
+          "li",
+          null,
+          " It controls weight. When a person is sedentary, he tends to be taking in more calories than are needed. These unused calories accumulate as fat. A person who is physically active may have a deficit of calories, which takes fat away and lowers weight. Lowered weight is good for the heart and can be beneficial in people with diabetes."
+        ),
+        React.createElement(
+          "li",
+          null,
+          " It strengthens bones. Just as muscles grow stronger when physically stressed, bones also respond by getting stronger. Exercise increases bone density, which helps prevent osteoporosis, a condition in which bones lose density, weaken, and become porous and fragile."
+        ),
+        React.createElement(
+          "li",
+          null,
+          " It helps prevent cancer. People who exercise regularly have lower incidences of cancer. The cancers most affected include colon, prostate, uterine, and breast cancers."
+        ),
+        React.createElement(
+          "li",
+          null,
+          " It regulates blood pressure. Exercise has been shown to reduce stress levels. As the levels of stress in a person's body subsides, his blood pressure and his risk for heart disease decline."
+        ),
+        React.createElement(
+          "li",
+          null,
+          " It improves energy levels. Regular exercise often makes people feel more energetic, allows them to be more active, and reduces the likelihood that they'll tire during the day."
+        ),
+        React.createElement(
+          "li",
+          null,
+          " It enhances emotional well-being. Most people report that they feel calm and have a sense of well-being after they exercise. Exercise, according to one theory, releases beta-endorphin, a natural substance in the body that is hundreds of times more potent than morphine. Another theory points to serotonin as the cause of the exercise high. Increased levels of serotonin in the central nervous system are associated with feelings of well-being, heightening of appetite, and lessening of mental depression. The weight loss that accompanies exercise can also cause people to feel better about themselves."
+        )
+      )
+    );
+  }
+
+  function Expand(props) {
+    return React.createElement("p", null);
+  }
+
+  function Phrase(props) {
+    var isExpanded = props.isExpanded;
+    if (isExpanded) {
+      return React.createElement(Contract, null);
+    }
+    return React.createElement(Expand, null);
+  }
+
+  function ReadMoreButton(props) {
+    return React.createElement(
+      "div",
+      { className: "read-it", onClick: props.onClick },
+      "Read More"
+    );
+  }
+
+  function ReadLessButton(props) {
+    return React.createElement(
+      "div",
+      { className: "read-it", onClick: props.onClick },
+      "Read Less"
+    );
+  }
+
+  MR.SecondPostStory = SecondPostStory;
 })();
 "use strict";
 
@@ -1009,6 +1401,8 @@ if (window.MR === undefined) {
     React.createElement(Route, { path: '/Staff', component: MR.Staff }),
     React.createElement(Route, { path: '/FirstPost', component: MR.FirstPost }),
     React.createElement(Route, { path: '/FirstPostStory', component: MR.FirstPostStory }),
+    React.createElement(Route, { path: '/ScondPost', component: MR.SecondPost }),
+    React.createElement(Route, { path: '/SecondPostStory', component: MR.SecondPostStory }),
     React.createElement(Route, { path: '/Signin', component: MR.Signin }),
     React.createElement(Route, { path: '/Contact', component: MR.Contact }),
     React.createElement(Route, { path: '/Footer', component: MR.Footer })

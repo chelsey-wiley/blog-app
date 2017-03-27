@@ -14,10 +14,10 @@ class FirstPost extends React.Component {
 
     return <div className="post">
       <div className="post-body">
-        <h1 className="post-title">First Post</h1>
+        <h1 className="post-title">Essential Building Blocks</h1>
         <h4 className="post-date">3.13.17</h4>
         <img className="post-image" src= "kcStockImg1.jpg"/>
-        <p className="post-summary">Post Summary Goes Here. This is a story, and it's a good story. It's about something really really stupendious. Something you have probably never heard of before. Bit it starts like this, a long time ago.</p>
+        <p className="post-summary">Many early childhood educators, myself included, believe that every classroom should have a full set of unit blocks, assorted props tied to children’s current interests and experiences, open storage shelves, and plenty of space and time to build and rebuild invented and familiar structures. I canvassed NAEYC staff and Young Children consulting editors to ask, “What do you think children learn through block play?” Here are some responses:</p>
 
         <div className="post-story">
         <MR.FirstPostStory />
