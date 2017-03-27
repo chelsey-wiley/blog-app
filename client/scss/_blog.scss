@@ -59,18 +59,28 @@ padding-bottom:2%;
 
 .post-story p{
   line-height: 1.2em;
-}
-
-.red{
-  color: red;
-}
-
-.blue{
-  color:blue;
+  font-size: 1em;
+    padding-bottom: 16px;
 }
 
 .read-it{
-  background-color: green;
   height: 24px;
-  display: block;
+  color: $orange;
+}
+
+.post-story ol{
+  list-style-type: decimal;
+  font-size: 1em;
+  line-height: 1.2em;
+  margin-bottom: 16px;
+}
+
+.post-story ul{
+  list-style-type: disc;
+  font-size: 1em;
+  line-height: 1.2em;
+  margin-bottom: 16px;
+}
+.post-story li{
+  padding-bottom: 16px;
 }

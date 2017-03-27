@@ -4,7 +4,7 @@ console.log ('post component');
 
 
 
-class FirstPost extends React.Component {
+class PostTemplate extends React.Component {
 
   clickReadMore(classname){
       console.log('clicked it');
@@ -17,7 +17,7 @@ class FirstPost extends React.Component {
         <h1 className="post-title">First Post</h1>
         <h4 className="post-date">3.13.17</h4>
         <img className="post-image" src= "kcStockImg1.jpg"/>
-        <p className="post-summary">Post Summary Goes Here. This is a story, and it's a good story. It's about something really really stupendious. Something you have probably never heard of before. Bit it starts like this, a long time ago.</p>
+        <p className="post-summary">Post Summary Goes Here.</p>
 
         <div className="post-story">
         <MR.FirstPostStory />
@@ -27,5 +27,5 @@ class FirstPost extends React.Component {
     </div>
   }
 }
-  MR.FirstPost = FirstPost;
+  MR.PostTemplate = PostTemplate;
 }());

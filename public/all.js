@@ -254,7 +254,7 @@ console.log('post component');
               { className: 'post-date' },
               '3.13.17'
             ),
-            React.createElement('img', { className: 'post-image', src: 'img-placeholder.jpg' }),
+            React.createElement('img', { className: 'post-image', src: 'kcStockImg1.jpg' }),
             React.createElement(
               'p',
               { className: 'post-summary' },
@@ -340,18 +340,77 @@ console.log('post component');
 
   function Contract(props) {
     return React.createElement(
-      "p",
+      "div",
       null,
-      "Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum."
+      React.createElement(
+        "p",
+        null,
+        "Many early childhood educators, myself included, believe that every classroom should have a full set of unit blocks, assorted props tied to children\u2019s current interests and experiences, open storage shelves, and plenty of space and time to build and rebuild invented and familiar structures. I canvassed NAEYC staff and Young Children consulting editors to ask, \u201CWhat do you think children learn through block play?\u201D Here are some responses:"
+      ),
+      React.createElement(
+        "ol",
+        null,
+        React.createElement(
+          "li",
+          null,
+          "Problem solving. Sometimes it is intentional: \u201CI want to build X. How do I do that?\u201D Other times it is in-the-moment: \u201CTo go higher and add to one side, what can I use?\u201D\u2014Peter Pizzolongo "
+        ),
+        React.createElement(
+          "li",
+          null,
+          " Imagination. Children can follow their own plan, or they can share a friend\u2019s vision and work together to create something they never dreamed of.\u2014Karen Cairone"
+        ),
+        React.createElement(
+          "li",
+          null,
+          "Self-expression. Blocks offer many ways for young dual language learners to explore, express themselves, and demonstrate what they are learning across languages.\u2014Karen Nemeth "
+        ),
+        React.createElement(
+          "li",
+          null,
+          "Mathematics. Important concepts and skills are practiced and strengthened through block play, including length, measurement, comparison, number, estimation, symmetry, balance.\u2014Kristen Kemple"
+        ),
+        React.createElement(
+          "li",
+          null,
+          "Continuity and permanence. Block play engages spatial sense and motor abilities; it can be a solo or a group effort; block creations can stand for an indefinite period of time.\u2014Lawrence Balter "
+        ),
+        React.createElement(
+          "li",
+          null,
+          "Creativity. Blocks and other loose parts can be moved freely by children, to be combined and recombined in countless ways.\u2014Angela Eckhoff "
+        ),
+        React.createElement(
+          "li",
+          null,
+          "Science. Blocks offer opportunities to test hypotheses and build scientific reasoning.\u2014Gayle Mindes"
+        ),
+        React.createElement(
+          "li",
+          null,
+          "Self-esteem. Children discover that they have ideas and that they can bring their ideas to life by creating, transforming, demolishing, and re-creating something unique.\u2014Holly Bohart"
+        ),
+        React.createElement(
+          "li",
+          null,
+          " Social and emotional growth. Blocks help children learn to take turns and share materials, develop new friendships, become self-reliant, increase attention span, cooperate with others, and develop self-esteem.\u2014Kathleen Harris"
+        ),
+        React.createElement(
+          "li",
+          null,
+          "Development in all areas. Block play requires fine and gross motor skills. Blocks enhance children\u2019s problem-solving abilities, mathematics skills, and language and literacy abilities. And constructing \u201Ccreations\u201D builds self-esteem and feelings of success. \u2014Linda Taylor The articles in the March 2015 cluster highlight the many benefits of block play, from infancy through the primary grades. The authors urge early childhood educators to introduce or reintroduce blocks because they are an ideal material for young children. Through examples and images, the authors demonstrate the teaching and learning possibilities that block play supports."
+        ),
+        React.createElement(
+          "p",
+          null,
+          " \u2014Derry Koralek, Chief Publishing Officer and Editor in Chief"
+        )
+      )
     );
   }
 
   function Expand(props) {
-    return React.createElement(
-      "p",
-      null,
-      "..."
-    );
+    return React.createElement("p", null);
   }
 
   function Phrase(props) {

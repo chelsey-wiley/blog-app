@@ -170,17 +170,27 @@ body {
   line-height: 1.1em; }
 
 .post-story p {
-  line-height: 1.2em; }
-
-.red {
-  color: red; }
-
-.blue {
-  color: blue; }
+  line-height: 1.2em;
+  font-size: 1em;
+  padding-bottom: 16px; }
 
 .read-it {
-  background-color: green;
   height: 24px;
-  display: block; }
+  color: #ee672f; }
+
+.post-story ol {
+  list-style-type: decimal;
+  font-size: 1em;
+  line-height: 1.2em;
+  margin-bottom: 16px; }
+
+.post-story ul {
+  list-style-type: disc;
+  font-size: 1em;
+  line-height: 1.2em;
+  margin-bottom: 16px; }
+
+.post-story li {
+  padding-bottom: 16px; }
 
 /*# sourceMappingURL=style.css.map */

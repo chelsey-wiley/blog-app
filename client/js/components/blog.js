@@ -24,7 +24,6 @@ class Blog extends React.Component {
       </div>
 
     <MR.FirstPost/>
-    
     </div>
 
       <MR.Footer/>
