@@ -4,7 +4,7 @@
 The Kid’s Cottage blog allows parent to be actively involved in the daily lives of their children even though they can’t be physically present. The blog’s goal is to be a continuation of the Cottage community encouraging parents to get involved and begin conversations with other parents and staff.
 
 
-##Use:
+## Use:
  - Problem
  Communication with parents is either impersonal or time consuming. New students typically come from referrals so keeping parents happy is essential to the bottom line.
  - Ethics
@@ -52,6 +52,6 @@ As business grows integrate login and portal features - no CMS as project is on 
   Communication is 2-way to solve the problem this could be implemented
 - App
 One site that functions more like a native app? - With 50 people an app may not align with goals
-- Success Metrics:
-Increase: The gross number of students/month by 2.
-Decrease: Attendees turnover rates averaging 1/quarter.
+## Success Metrics:
+- Increase: The gross number of students/month by 2.
+- Decrease: Attendees turnover rates averaging 1/quarter.
