@@ -10,15 +10,20 @@ class Blog extends React.Component {
       <MR.Header/>
     </header>
 
+    <div className="blog-page"
       <div className="title">
         <h1>Blog</h1>
       </div>
-
-      <div className="blog-posts">
-        <MR.FirstPost/>
+      <div className="post-sidebar">
+        <ul>
+          <li>Most Viewed</li>
+          <li> Most Commented</li>
+          <li> Most Shared</li>
+        </ul>
       </div>
+      <MR.FirstPost/>
 
-
+    </div>
 
       <MR.Footer/>
     </div>)

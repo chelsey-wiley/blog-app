@@ -23,14 +23,6 @@ class FirstPost extends React.Component {
         </div>
       </div>
 
-      <div className="post-sidebar">
-        <ul>
-          <li>Most Viewed</li>
-          <li> Most Commented</li>
-          <li> Most Shared</li>
-        </ul>
-      </div>
-
     </div>
   }
 }
