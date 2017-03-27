@@ -7,7 +7,7 @@ The Kid’s Cottage blog allows parent to be actively involved in the daily live
 ## Use:
  - Problem
  Communication with parents is either impersonal or time consuming. New students typically come from referrals so keeping parents happy is essential to the bottom line.
- - Ethics
+ - Ethics: <br>
 Parents trust us to watch their kids but communication doesn’t occur naturally so trust is lost.
  - Perspectives
 Parents: No one talks to us. My kid’s are really happy and I love it there but I never know what’s going on.
