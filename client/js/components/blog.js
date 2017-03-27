@@ -10,7 +10,7 @@ class Blog extends React.Component {
       <MR.Header/>
     </header>
 
-    <div className="blog-page"
+    <div className="blog-page">
       <div className="title">
         <h1>Blog</h1>
       </div>
@@ -22,7 +22,7 @@ class Blog extends React.Component {
         </ul>
       </div>
       <MR.FirstPost/>
-
+      <MR.FirstPost/>
     </div>
 
       <MR.Footer/>

@@ -21,15 +21,15 @@ body{
   display: inline;
   text-align: center;
   background-color: $lightblue;
-
-
 }
-
 
 .title{
   font-family: 'Coming Soon', cursive;
   font-size: 3em;
-  padding-bottom: 5%;
   position: relative;
   clear: both;
+}
+
+.content{
+  padding-top: 24px;
 }

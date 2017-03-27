@@ -36,37 +36,42 @@ console.log('Blog component');
           ),
           React.createElement(
             "div",
-            { className: "title" },
+            { className: "blog-page" },
             React.createElement(
-              "h1",
-              null,
-              "Blog"
-            )
-          ),
-          React.createElement(
-            "div",
-            { className: "post-sidebar" },
-            React.createElement(
-              "ul",
-              null,
+              "div",
+              { className: "title" },
               React.createElement(
-                "li",
+                "h1",
                 null,
-                "Most Viewed"
-              ),
-              React.createElement(
-                "li",
-                null,
-                " Most Commented"
-              ),
-              React.createElement(
-                "li",
-                null,
-                " Most Shared"
+                "Blog"
               )
-            )
+            ),
+            React.createElement(
+              "div",
+              { className: "post-sidebar" },
+              React.createElement(
+                "ul",
+                null,
+                React.createElement(
+                  "li",
+                  null,
+                  "Most Viewed"
+                ),
+                React.createElement(
+                  "li",
+                  null,
+                  " Most Commented"
+                ),
+                React.createElement(
+                  "li",
+                  null,
+                  " Most Shared"
+                )
+              )
+            ),
+            React.createElement(MR.FirstPost, null),
+            React.createElement(MR.FirstPost, null)
           ),
-          React.createElement(MR.FirstPost, null),
           React.createElement(MR.Footer, null)
         );
       }
@@ -123,9 +128,13 @@ if (window.MR === undefined) {
             )
           ),
           React.createElement(
-            "p",
-            null,
-            "line 5 is the current component name. line 21 is the name space referencing the current component before and after the equals sign are the same. Must add the name spacing to the router js file in the client folder. "
+            "div",
+            { className: "content" },
+            React.createElement(
+              "p",
+              null,
+              "line 5 is the current component name. line 21 is the name space referencing the current component before and after the equals sign are the same. Must add the name spacing to the router js file in the client folder. "
+            )
           ),
           React.createElement(MR.Footer, null)
         );
@@ -544,9 +553,13 @@ console.log('Blog component');
             )
           ),
           React.createElement(
-            "p",
-            null,
-            "line 5 is the current component name. line 21 is the name space referencing the current component before and after the equals sign are the same. Must add the name spacing to the router js file in the client folder. "
+            "div",
+            { className: "content" },
+            React.createElement(
+              "p",
+              null,
+              "line 5 is the current component name. line 21 is the name space referencing the current component before and after the equals sign are the same. Must add the name spacing to the router js file in the client folder. "
+            )
           ),
           React.createElement(MR.Footer, null)
         );
@@ -604,9 +617,13 @@ console.log('Blog component');
             )
           ),
           React.createElement(
-            "p",
-            null,
-            "line 5 is the current component name. line 21 is the name space referencing the current component before and after the equals sign are the same. Must add the name spacing to the router js file in the client folder. "
+            "div",
+            { className: "content" },
+            React.createElement(
+              "p",
+              null,
+              "line 5 is the current component name. line 21 is the name space referencing the current component before and after the equals sign are the same. Must add the name spacing to the router js file in the client folder. "
+            )
           ),
           React.createElement(MR.Footer, null)
         );
@@ -664,9 +681,13 @@ console.log('Blog component');
             )
           ),
           React.createElement(
-            "p",
-            null,
-            "line 5 is the current component name. line 21 is the name space referencing the current component before and after the equals sign are the same. Must add the name spacing to the router js file in the client folder. "
+            "div",
+            { className: "content" },
+            React.createElement(
+              "p",
+              null,
+              "line 5 is the current component name. line 21 is the name space referencing the current component before and after the equals sign are the same. Must add the name spacing to the router js file in the client folder. "
+            )
           ),
           React.createElement(MR.Footer, null)
         );
@@ -724,9 +745,13 @@ console.log('Blog component');
             )
           ),
           React.createElement(
-            "p",
-            null,
-            "line 5 is the current component name. line 21 is the name space referencing the current component before and after the equals sign are the same. Must add the name spacing to the router js file in the client folder. "
+            "div",
+            { className: "content" },
+            React.createElement(
+              "p",
+              null,
+              "line 5 is the current component name. line 21 is the name space referencing the current component before and after the equals sign are the same. Must add the name spacing to the router js file in the client folder. "
+            )
           ),
           React.createElement(MR.Footer, null)
         );
@@ -784,9 +809,13 @@ console.log('Blog component');
             )
           ),
           React.createElement(
-            "p",
-            null,
-            "line 5 is the current component name. line 21 is the name space referencing the current component before and after the equals sign are the same. Must add the name spacing to the router js file in the client folder. "
+            "div",
+            { className: "content" },
+            React.createElement(
+              "p",
+              null,
+              "line 5 is the current component name. line 21 is the name space referencing the current component before and after the equals sign are the same. Must add the name spacing to the router js file in the client folder. "
+            )
           ),
           React.createElement(MR.Footer, null)
         );
