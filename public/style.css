@@ -144,7 +144,8 @@ body {
   max-width: 25%;
   font-size: 1.2em;
   line-height: 1.2em;
-  padding-left: 2%; }
+  padding-left: 2%;
+  margin-top: 16px; }
 
 .post-sidebar button {
   margin-top: 20px;
@@ -170,5 +171,11 @@ body {
 
 .post-story p {
   line-height: 1.2em; }
+
+.red {
+  color: red; }
+
+.blue {
+  color: blue; }
 
 /*# sourceMappingURL=style.css.map */

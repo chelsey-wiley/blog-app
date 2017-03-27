@@ -74,8 +74,7 @@ console.log('Blog component');
                 "Subscribe to our Newsletter "
               )
             ),
-            React.createElement(MR.FirstPost, null),
-            React.createElement(MR.FirstPost, null)
+            React.createElement(MR.SecondPost, null)
           ),
           React.createElement(MR.Footer, null)
         );
@@ -704,6 +703,111 @@ console.log('Blog component');
 
   MR.Resources = Resources;
 })();
+'use strict';
+
+var _createClass = function () { function defineProperties(target, props) { for (var i = 0; i < props.length; i++) { var descriptor = props[i]; descriptor.enumerable = descriptor.enumerable || false; descriptor.configurable = true; if ("value" in descriptor) descriptor.writable = true; Object.defineProperty(target, descriptor.key, descriptor); } } return function (Constructor, protoProps, staticProps) { if (protoProps) defineProperties(Constructor.prototype, protoProps); if (staticProps) defineProperties(Constructor, staticProps); return Constructor; }; }();
+
+function _classCallCheck(instance, Constructor) { if (!(instance instanceof Constructor)) { throw new TypeError("Cannot call a class as a function"); } }
+
+function _possibleConstructorReturn(self, call) { if (!self) { throw new ReferenceError("this hasn't been initialised - super() hasn't been called"); } return call && (typeof call === "object" || typeof call === "function") ? call : self; }
+
+function _inherits(subClass, superClass) { if (typeof superClass !== "function" && superClass !== null) { throw new TypeError("Super expression must either be null or a function, not " + typeof superClass); } subClass.prototype = Object.create(superClass && superClass.prototype, { constructor: { value: subClass, enumerable: false, writable: true, configurable: true } }); if (superClass) Object.setPrototypeOf ? Object.setPrototypeOf(subClass, superClass) : subClass.__proto__ = superClass; }
+
+if (window.MR === undefined) {
+  window.MR = {};
+}
+console.log('post component');
+(function () {
+  var SecondPost = function (_React$Component) {
+    _inherits(SecondPost, _React$Component);
+
+    function SecondPost(props) {
+      _classCallCheck(this, SecondPost);
+
+      var _this = _possibleConstructorReturn(this, (SecondPost.__proto__ || Object.getPrototypeOf(SecondPost)).call(this, props));
+
+      _this.handleLoginClick = _this.handleLoginClick.bind(_this);
+      _this.handleLogoutClick = _this.handleLogoutClick.bind(_this);
+      _this.state = { isLoggedIn: false };
+      return _this;
+    }
+
+    _createClass(SecondPost, [{
+      key: 'handleLoginClick',
+      value: function handleLoginClick() {
+        this.setState({ isLoggedIn: true });
+      }
+    }, {
+      key: 'handleLogoutClick',
+      value: function handleLogoutClick() {
+        this.setState({ isLoggedIn: false });
+      }
+    }, {
+      key: 'render',
+      value: function render() {
+        var isLoggedIn = this.state.isLoggedIn;
+
+        var button = null;
+        if (isLoggedIn) {
+          button = React.createElement(LogoutButton, { onClick: this.handleLogoutClick });
+        } else {
+          button = React.createElement(LoginButton, { onClick: this.handleLoginClick });
+        }
+
+        return React.createElement(
+          'div',
+          null,
+          button,
+          React.createElement(Greeting, { isLoggedIn: isLoggedIn })
+        );
+      }
+    }]);
+
+    return SecondPost;
+  }(React.Component);
+
+  function UserGreeting(props) {
+    return React.createElement(
+      'p',
+      null,
+      'Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.'
+    );
+  }
+
+  function GuestGreeting(props) {
+    return React.createElement(
+      'p',
+      null,
+      '...'
+    );
+  }
+
+  function Greeting(props) {
+    var isLoggedIn = props.isLoggedIn;
+    if (isLoggedIn) {
+      return React.createElement(UserGreeting, null);
+    }
+    return React.createElement(GuestGreeting, null);
+  }
+
+  function LoginButton(props) {
+    return React.createElement(
+      'button',
+      { onClick: props.onClick },
+      'Read More'
+    );
+  }
+
+  function LogoutButton(props) {
+    return React.createElement(
+      'button',
+      { onClick: props.onClick },
+      'Read Less'
+    );
+  }
+
+  MR.SecondPost = SecondPost;
+})();
 "use strict";
 
 var _createClass = function () { function defineProperties(target, props) { for (var i = 0; i < props.length; i++) { var descriptor = props[i]; descriptor.enumerable = descriptor.enumerable || false; descriptor.configurable = true; if ("value" in descriptor) descriptor.writable = true; Object.defineProperty(target, descriptor.key, descriptor); } } return function (Constructor, protoProps, staticProps) { if (protoProps) defineProperties(Constructor.prototype, protoProps); if (staticProps) defineProperties(Constructor, staticProps); return Constructor; }; }();
@@ -857,6 +961,7 @@ if (window.MR === undefined) {
     React.createElement(Route, { path: '/Programs', component: MR.Programs }),
     React.createElement(Route, { path: '/Staff', component: MR.Staff }),
     React.createElement(Route, { path: '/FirstPost', component: MR.FirstPost }),
+    React.createElement(Route, { path: '/SecondPost', component: MR.SecondPost }),
     React.createElement(Route, { path: '/Signin', component: MR.Signin }),
     React.createElement(Route, { path: '/Contact', component: MR.Contact }),
     React.createElement(Route, { path: '/Footer', component: MR.Footer })

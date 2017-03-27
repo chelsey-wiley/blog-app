@@ -2,6 +2,8 @@ if (window.MR === undefined) {window.MR = {};}
 console.log ('post component');
 (function() {
 
+
+
 class FirstPost extends React.Component {
 
   clickReadMore(classname){
