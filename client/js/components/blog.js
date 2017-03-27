@@ -22,7 +22,9 @@ class Blog extends React.Component {
         </ul>
         <button>Subscribe to our Newsletter </button>
       </div>
-    <MR.SecondPost/>
+
+    <MR.FirstPost/>
+    
     </div>
 
       <MR.Footer/>

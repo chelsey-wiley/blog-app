@@ -74,7 +74,7 @@ console.log('Blog component');
                 "Subscribe to our Newsletter "
               )
             ),
-            React.createElement(MR.SecondPost, null)
+            React.createElement(MR.FirstPost, null)
           ),
           React.createElement(MR.Footer, null)
         );
@@ -237,7 +237,6 @@ console.log('post component');
     }, {
       key: 'render',
       value: function render() {
-        var _this2 = this;
 
         return React.createElement(
           'div',
@@ -264,18 +263,7 @@ console.log('post component');
             React.createElement(
               'div',
               { className: 'post-story' },
-              React.createElement(
-                'p',
-                { className: 'read-more blue', onClick: function onClick() {
-                    _this2.clickReadMore();
-                  } },
-                'Read the full post...'
-              ),
-              React.createElement(
-                'p',
-                null,
-                'Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum. Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum. '
-              )
+              React.createElement(MR.FirstPostStory, null)
             )
           )
         );
@@ -286,6 +274,111 @@ console.log('post component');
   }(React.Component);
 
   MR.FirstPost = FirstPost;
+})();
+"use strict";
+
+var _createClass = function () { function defineProperties(target, props) { for (var i = 0; i < props.length; i++) { var descriptor = props[i]; descriptor.enumerable = descriptor.enumerable || false; descriptor.configurable = true; if ("value" in descriptor) descriptor.writable = true; Object.defineProperty(target, descriptor.key, descriptor); } } return function (Constructor, protoProps, staticProps) { if (protoProps) defineProperties(Constructor.prototype, protoProps); if (staticProps) defineProperties(Constructor, staticProps); return Constructor; }; }();
+
+function _classCallCheck(instance, Constructor) { if (!(instance instanceof Constructor)) { throw new TypeError("Cannot call a class as a function"); } }
+
+function _possibleConstructorReturn(self, call) { if (!self) { throw new ReferenceError("this hasn't been initialised - super() hasn't been called"); } return call && (typeof call === "object" || typeof call === "function") ? call : self; }
+
+function _inherits(subClass, superClass) { if (typeof superClass !== "function" && superClass !== null) { throw new TypeError("Super expression must either be null or a function, not " + typeof superClass); } subClass.prototype = Object.create(superClass && superClass.prototype, { constructor: { value: subClass, enumerable: false, writable: true, configurable: true } }); if (superClass) Object.setPrototypeOf ? Object.setPrototypeOf(subClass, superClass) : subClass.__proto__ = superClass; }
+
+if (window.MR === undefined) {
+  window.MR = {};
+}
+console.log('post component');
+(function () {
+  var FirstPostStory = function (_React$Component) {
+    _inherits(FirstPostStory, _React$Component);
+
+    function FirstPostStory(props) {
+      _classCallCheck(this, FirstPostStory);
+
+      var _this = _possibleConstructorReturn(this, (FirstPostStory.__proto__ || Object.getPrototypeOf(FirstPostStory)).call(this, props));
+
+      _this.handleReadMore = _this.handleReadMore.bind(_this);
+      _this.handleReadLess = _this.handleReadLess.bind(_this);
+      _this.state = { isExpanded: false };
+      return _this;
+    }
+
+    _createClass(FirstPostStory, [{
+      key: "handleReadMore",
+      value: function handleReadMore() {
+        this.setState({ isExpanded: true });
+      }
+    }, {
+      key: "handleReadLess",
+      value: function handleReadLess() {
+        this.setState({ isExpanded: false });
+      }
+    }, {
+      key: "render",
+      value: function render() {
+        var isExpanded = this.state.isExpanded;
+
+        var div = null;
+        if (isExpanded) {
+          div = React.createElement(ReadLessButton, { onClick: this.handleReadLess });
+        } else {
+          div = React.createElement(ReadMoreButton, { onClick: this.handleReadMore });
+        }
+
+        return React.createElement(
+          "div",
+          null,
+          div,
+          React.createElement(Phrase, { isExpanded: isExpanded })
+        );
+      }
+    }]);
+
+    return FirstPostStory;
+  }(React.Component);
+
+  function Contract(props) {
+    return React.createElement(
+      "p",
+      null,
+      "Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum."
+    );
+  }
+
+  function Expand(props) {
+    return React.createElement(
+      "p",
+      null,
+      "..."
+    );
+  }
+
+  function Phrase(props) {
+    var isExpanded = props.isExpanded;
+    if (isExpanded) {
+      return React.createElement(Contract, null);
+    }
+    return React.createElement(Expand, null);
+  }
+
+  function ReadMoreButton(props) {
+    return React.createElement(
+      "div",
+      { className: "read-it", onClick: props.onClick },
+      "Read More"
+    );
+  }
+
+  function ReadLessButton(props) {
+    return React.createElement(
+      "div",
+      { className: "read-it", onClick: props.onClick },
+      "Read Less"
+    );
+  }
+
+  MR.FirstPostStory = FirstPostStory;
 })();
 'use strict';
 
@@ -716,111 +809,6 @@ function _inherits(subClass, superClass) { if (typeof superClass !== "function" 
 if (window.MR === undefined) {
   window.MR = {};
 }
-console.log('post component');
-(function () {
-  var SecondPost = function (_React$Component) {
-    _inherits(SecondPost, _React$Component);
-
-    function SecondPost(props) {
-      _classCallCheck(this, SecondPost);
-
-      var _this = _possibleConstructorReturn(this, (SecondPost.__proto__ || Object.getPrototypeOf(SecondPost)).call(this, props));
-
-      _this.handleReadMore = _this.handleReadMore.bind(_this);
-      _this.handleReadLess = _this.handleReadLess.bind(_this);
-      _this.state = { isExpanded: false };
-      return _this;
-    }
-
-    _createClass(SecondPost, [{
-      key: "handleReadMore",
-      value: function handleReadMore() {
-        this.setState({ isExpanded: true });
-      }
-    }, {
-      key: "handleReadLess",
-      value: function handleReadLess() {
-        this.setState({ isExpanded: false });
-      }
-    }, {
-      key: "render",
-      value: function render() {
-        var isExpanded = this.state.isExpanded;
-
-        var div = null;
-        if (isExpanded) {
-          div = React.createElement(LogoutButton, { onClick: this.handleReadLess });
-        } else {
-          div = React.createElement(LoginButton, { onClick: this.handleReadMore });
-        }
-
-        return React.createElement(
-          "div",
-          null,
-          div,
-          React.createElement(Phrase, { isExpanded: isExpanded })
-        );
-      }
-    }]);
-
-    return SecondPost;
-  }(React.Component);
-
-  function Contract(props) {
-    return React.createElement(
-      "p",
-      null,
-      "Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum."
-    );
-  }
-
-  function Expand(props) {
-    return React.createElement(
-      "p",
-      null,
-      "..."
-    );
-  }
-
-  function Phrase(props) {
-    var isExpanded = props.isExpanded;
-    if (isExpanded) {
-      return React.createElement(Contract, null);
-    }
-    return React.createElement(Expand, null);
-  }
-
-  function LoginButton(props) {
-    return React.createElement(
-      "div",
-      { className: "read-it", onClick: props.onClick },
-      "Read More"
-    );
-  }
-
-  function LogoutButton(props) {
-    return React.createElement(
-      "div",
-      { className: "read-it", onClick: props.onClick },
-      "Read Less"
-    );
-  }
-
-  MR.SecondPost = SecondPost;
-})();
-"use strict";
-
-var _createClass = function () { function defineProperties(target, props) { for (var i = 0; i < props.length; i++) { var descriptor = props[i]; descriptor.enumerable = descriptor.enumerable || false; descriptor.configurable = true; if ("value" in descriptor) descriptor.writable = true; Object.defineProperty(target, descriptor.key, descriptor); } } return function (Constructor, protoProps, staticProps) { if (protoProps) defineProperties(Constructor.prototype, protoProps); if (staticProps) defineProperties(Constructor, staticProps); return Constructor; }; }();
-
-function _classCallCheck(instance, Constructor) { if (!(instance instanceof Constructor)) { throw new TypeError("Cannot call a class as a function"); } }
-
-function _possibleConstructorReturn(self, call) { if (!self) { throw new ReferenceError("this hasn't been initialised - super() hasn't been called"); } return call && (typeof call === "object" || typeof call === "function") ? call : self; }
-
-function _inherits(subClass, superClass) { if (typeof superClass !== "function" && superClass !== null) { throw new TypeError("Super expression must either be null or a function, not " + typeof superClass); } subClass.prototype = Object.create(superClass && superClass.prototype, { constructor: { value: subClass, enumerable: false, writable: true, configurable: true } }); if (superClass) Object.setPrototypeOf ? Object.setPrototypeOf(subClass, superClass) : subClass.__proto__ = superClass; }
-
-if (window.MR === undefined) {
-  window.MR = {};
-}
 console.log('Blog component');
 (function () {
   var Signin = function (_React$Component) {
@@ -961,7 +949,7 @@ if (window.MR === undefined) {
     React.createElement(Route, { path: '/Programs', component: MR.Programs }),
     React.createElement(Route, { path: '/Staff', component: MR.Staff }),
     React.createElement(Route, { path: '/FirstPost', component: MR.FirstPost }),
-    React.createElement(Route, { path: '/SecondPost', component: MR.SecondPost }),
+    React.createElement(Route, { path: '/FirstPostStory', component: MR.FirstPostStory }),
     React.createElement(Route, { path: '/Signin', component: MR.Signin }),
     React.createElement(Route, { path: '/Contact', component: MR.Contact }),
     React.createElement(Route, { path: '/Footer', component: MR.Footer })

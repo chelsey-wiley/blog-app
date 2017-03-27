@@ -4,7 +4,7 @@ console.log ('post component');
 
 
 
-class SecondPost extends React.Component {
+class FirstPostStory extends React.Component {
 
   constructor(props) {
   super(props);
@@ -26,9 +26,9 @@ handleReadMore() {
 
     let div = null;
     if (isExpanded) {
-      div = <LogoutButton onClick={this.handleReadLess} />;
+      div = <ReadLessButton onClick={this.handleReadLess} />;
     } else {
-      div = <LoginButton onClick={this.handleReadMore} />;
+      div = <ReadMoreButton onClick={this.handleReadMore} />;
     }
 
     return (
@@ -56,7 +56,7 @@ function Phrase (props) {
   return <Expand />;
 }
 
-function LoginButton(props) {
+function ReadMoreButton(props) {
   return (
     <div className= "read-it" onClick={props.onClick}>
       Read More
@@ -64,7 +64,7 @@ function LoginButton(props) {
   );
 }
 
-function LogoutButton(props) {
+function ReadLessButton(props) {
   return (
     <div className="read-it" onClick={props.onClick}>
       Read Less
@@ -73,5 +73,5 @@ function LogoutButton(props) {
 }
 
 
-  MR.SecondPost = SecondPost;
+  MR.FirstPostStory = FirstPostStory;
 }());
