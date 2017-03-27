@@ -703,7 +703,7 @@ console.log('Blog component');
 
   MR.Resources = Resources;
 })();
-'use strict';
+"use strict";
 
 var _createClass = function () { function defineProperties(target, props) { for (var i = 0; i < props.length; i++) { var descriptor = props[i]; descriptor.enumerable = descriptor.enumerable || false; descriptor.configurable = true; if ("value" in descriptor) descriptor.writable = true; Object.defineProperty(target, descriptor.key, descriptor); } } return function (Constructor, protoProps, staticProps) { if (protoProps) defineProperties(Constructor.prototype, protoProps); if (staticProps) defineProperties(Constructor, staticProps); return Constructor; }; }();
 
@@ -728,37 +728,37 @@ console.log('post component');
 
       _this.handleReadMore = _this.handleReadMore.bind(_this);
       _this.handleReadLess = _this.handleReadLess.bind(_this);
-      _this.state = { isLoggedIn: false };
+      _this.state = { isExpanded: false };
       return _this;
     }
 
     _createClass(SecondPost, [{
-      key: 'handleReadMore',
+      key: "handleReadMore",
       value: function handleReadMore() {
-        this.setState({ isLoggedIn: true });
+        this.setState({ isExpanded: true });
       }
     }, {
-      key: 'handleReadLess',
+      key: "handleReadLess",
       value: function handleReadLess() {
-        this.setState({ isLoggedIn: false });
+        this.setState({ isExpanded: false });
       }
     }, {
-      key: 'render',
+      key: "render",
       value: function render() {
-        var isLoggedIn = this.state.isLoggedIn;
+        var isExpanded = this.state.isExpanded;
 
         var div = null;
-        if (isLoggedIn) {
+        if (isExpanded) {
           div = React.createElement(LogoutButton, { onClick: this.handleReadLess });
         } else {
           div = React.createElement(LoginButton, { onClick: this.handleReadMore });
         }
 
         return React.createElement(
-          'div',
+          "div",
           null,
           div,
-          React.createElement(Phrase, { isLoggedIn: isLoggedIn })
+          React.createElement(Phrase, { isExpanded: isExpanded })
         );
       }
     }]);
@@ -768,23 +768,23 @@ console.log('post component');
 
   function Contract(props) {
     return React.createElement(
-      'p',
+      "p",
       null,
-      'Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.'
+      "Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum."
     );
   }
 
   function Expand(props) {
     return React.createElement(
-      'p',
+      "p",
       null,
-      '...'
+      "..."
     );
   }
 
   function Phrase(props) {
-    var isLoggedIn = props.isLoggedIn;
-    if (isLoggedIn) {
+    var isExpanded = props.isExpanded;
+    if (isExpanded) {
       return React.createElement(Contract, null);
     }
     return React.createElement(Expand, null);
@@ -792,17 +792,17 @@ console.log('post component');
 
   function LoginButton(props) {
     return React.createElement(
-      'button',
-      { onClick: props.onClick },
-      'Read More'
+      "div",
+      { className: "read-it", onClick: props.onClick },
+      "Read More"
     );
   }
 
   function LogoutButton(props) {
     return React.createElement(
-      'button',
-      { onClick: props.onClick },
-      'Read Less'
+      "div",
+      { className: "read-it", onClick: props.onClick },
+      "Read Less"
     );
   }
 

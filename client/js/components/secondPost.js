@@ -10,22 +10,22 @@ class SecondPost extends React.Component {
   super(props);
   this.handleReadMore = this.handleReadMore.bind(this);
   this.handleReadLess = this.handleReadLess.bind(this);
-  this.state = {isLoggedIn: false};
+  this.state = {isExpanded: false};
   }
 
 handleReadMore() {
-  this.setState({isLoggedIn: true});
+  this.setState({isExpanded: true});
   }
 
   handleReadLess() {
-  this.setState({isLoggedIn: false});
+  this.setState({isExpanded: false});
   }
 
   render() {
-    const isLoggedIn = this.state.isLoggedIn;
+    const isExpanded = this.state.isExpanded;
 
     let div = null;
-    if (isLoggedIn) {
+    if (isExpanded) {
       div = <LogoutButton onClick={this.handleReadLess} />;
     } else {
       div = <LoginButton onClick={this.handleReadMore} />;
@@ -34,7 +34,7 @@ handleReadMore() {
     return (
       <div>
         {div}
-        <Phrase isLoggedIn={isLoggedIn} />
+        <Phrase isExpanded={isExpanded} />
       </div>
     );
   }
@@ -49,8 +49,8 @@ function Expand(props) {
 }
 
 function Phrase (props) {
-  const isLoggedIn = props.isLoggedIn;
-  if (isLoggedIn) {
+  const isExpanded = props.isExpanded;
+  if (isExpanded) {
     return <Contract />;
   }
   return <Expand />;
@@ -58,17 +58,17 @@ function Phrase (props) {
 
 function LoginButton(props) {
   return (
-    <button onClick={props.onClick}>
+    <div className= "read-it" onClick={props.onClick}>
       Read More
-    </button>
+    </div>
   );
 }
 
 function LogoutButton(props) {
   return (
-    <button onClick={props.onClick}>
+    <div className="read-it" onClick={props.onClick}>
       Read Less
-    </button>
+    </div>
   );
 }
 
