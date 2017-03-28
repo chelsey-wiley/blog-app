@@ -3,6 +3,16 @@ body{
     background-color: $lightblue;
 }
 
+h1{
+  font-size: 1em;
+}
+
+.page h3{
+  font-size: 1.2em;
+  padding-top: 1em;
+  padding-bottom: 1em;
+}
+
 .content ol{
   list-style-type: decimal;
 }
@@ -16,7 +26,7 @@ body{
   padding-bottom: .5em;
 }
 
- p{
+  p{
   padding-bottom: .5em;
   margin-bottom: 1em;
   padding-top: .5em;
@@ -78,4 +88,22 @@ body{
 .staff-signin{
   float: right;
   font-size: 1.2em;
+}
+
+.home-img{
+  width: 60%;
+  float: left;
+}
+
+.home-img img{
+  max-width: 100%;
+}
+
+.home-content{
+  width: 36%;
+  float: right;
+}
+
+.home-content p{
+  padding-left: 2%;
 }

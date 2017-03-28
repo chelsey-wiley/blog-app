@@ -60,12 +60,12 @@ console.log('Blog component');
                 React.createElement(
                   "li",
                   null,
-                  " Most Commented"
+                  "Most Commented"
                 ),
                 React.createElement(
                   "li",
                   null,
-                  " Most Shared"
+                  "Most Shared"
                 )
               ),
               React.createElement(MR.NewsletterSignup, null)
@@ -645,18 +645,38 @@ console.log('home component');
               "h1",
               null,
               "Home"
-            ),
-            React.createElement(
-              "p",
-              null,
-              "Welcome to Kid's Cottage"
-            ),
+            )
+          ),
+          React.createElement(
+            "h3",
+            null,
+            "Welcome to Kids Cottage"
+          ),
+          React.createElement(
+            "div",
+            { className: "home-img" },
+            React.createElement("img", { src: "kcStockImg4.jpg" })
+          ),
+          React.createElement(
+            "div",
+            { className: "home-content" },
             React.createElement(
               "p",
               null,
               "We let \u201Ckids be kids\u201D by providing age appropriate activities that enrich, engage, and inspire."
+            ),
+            React.createElement(
+              "p",
+              null,
+              "Kids\u2019 Cottage exists to provide safe, quality childcare for working parents/guardians of children ages six weeks through age 5.  Our main goal is to provide a comfortable and safe environment that focuses on the whole child, stimulating critical thinking skills, fine and gross motor skills, character education and instilling a lifelong love of learning."
+            ),
+            React.createElement(
+              "p",
+              null,
+              "We've recently started an After School Program for school aged children. Contact us to learn more!"
             )
-          )
+          ),
+          React.createElement(MR.Footer, null)
         );
       }
     }]);
