@@ -21,8 +21,9 @@ class Blog extends React.Component {
           <li> Most Commented</li>
           <li> Most Shared</li>
         </ul>
-        <button>Subscribe to our Newsletter </button>
+        <MR.NewsletterSignup/>
       </div>
+
 
     <MR.FirstPost/>
     <MR.SecondPost/>

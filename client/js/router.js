@@ -12,6 +12,7 @@ if (window.MR === undefined) {window.MR = {};}
   var router = <Router history={ReactRouter.hashHistory}>
       <Route path="/" component={MR.Home} />
       <Route path="/Blog" component={MR.Blog}/>
+      <Route path="/NewsletterSignup" component = {MR.NewsletterSignup}/>
       <Route path="/Resources" component={MR.Resources}/>
       <Route path="/Parents" component={MR.Parents}/>
       <Route path="/Programs" component={MR.Programs}/>
@@ -20,7 +21,7 @@ if (window.MR === undefined) {window.MR = {};}
       <Route path="/FirstPost" component={MR.FirstPost}/>
         <Route path="/FirstPostStory" component={MR.FirstPostStory}/>
       <Route path="/ScondPost" component={MR.SecondPost}/>
-        <Route path="/SecondPostStory" component={MR.SecondPostStory}/>  
+        <Route path="/SecondPostStory" component={MR.SecondPostStory}/>
 
 
       <Route path="/Signin" component={MR.Signin}/>
