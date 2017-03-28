@@ -12,6 +12,8 @@ class Home extends React.Component {
 
       <div className="title">
       <h1>Home</h1>
+      <p>Welcome to Kid's Cottage</p>
+      <p>We let “kids be kids” by providing age appropriate activities that enrich, engage, and inspire.</p>
       </div>
     </div>;
   }

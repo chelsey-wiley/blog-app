@@ -645,6 +645,16 @@ console.log('home component');
               "h1",
               null,
               "Home"
+            ),
+            React.createElement(
+              "p",
+              null,
+              "Welcome to Kid's Cottage"
+            ),
+            React.createElement(
+              "p",
+              null,
+              "We let \u201Ckids be kids\u201D by providing age appropriate activities that enrich, engage, and inspire."
             )
           )
         );
