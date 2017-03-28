@@ -16,7 +16,7 @@ class Staff extends React.Component {
       </div>
 
       <div className="content">
-        <p>line 5 is the current component name. line 21 is the name space referencing the current component before and after the equals sign are the same. Must add the name spacing to the router js file in the client folder. </p>
+        <p>At Kid's Cottage it is our main priority to have a loving, nurturing staff that is compassionate about a career teaching young children. All of our teachers have extensive background checks in addition to a working interview.  Although a majority of our staff come to us with experience and education in the preschool setting, we offer multiple training opportunities and additional classes through out the year.  We also have mandatory staff meetings and training sessions multiple times annually to ensure we have a well educated team.  Please meet our AMAZING STAFF below!</p>
       </div>
       <MR.Footer/>
     </div>)

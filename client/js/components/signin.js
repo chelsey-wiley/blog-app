@@ -16,7 +16,27 @@ class Signin extends React.Component {
       </div>
 
       <div className="content">
-        <p>line 5 is the current component name. line 21 is the name space referencing the current component before and after the equals sign are the same. Must add the name spacing to the router js file in the client folder. </p>
+        <div className="parent-signin">
+          <form>
+          <h1>Parent Sign-in</h1>
+          Username:<br/>
+            <input type="text" name="username"/><br/>
+          Password:<br/>
+            <input type="text" name="password"/><br/>
+            <input type="submit" value="Submit"/>
+        </form>
+        </div>
+        <div className="staff-signin">
+          <form>
+          <h1>Staff Sign-in</h1>
+          Username:<br/>
+            <input type="text" name="username"/><br/>
+          Password:<br/>
+            <input type="text" name="password"/><br/>
+            <input type="submit" value="Submit"/>
+        </form>
+        </div>
+
       </div>
 
 

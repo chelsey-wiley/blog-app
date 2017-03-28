@@ -134,8 +134,9 @@ if (window.MR === undefined) {
             React.createElement(
               "p",
               null,
-              "line 5 is the current component name. line 21 is the name space referencing the current component before and after the equals sign are the same. Must add the name spacing to the router js file in the client folder. "
-            )
+              "We'd love to hear from you!"
+            ),
+            React.createElement("img", { src: "Slice 1.png" })
           ),
           React.createElement(MR.Footer, null)
         );
@@ -777,7 +778,66 @@ console.log('Blog component');
             React.createElement(
               "p",
               null,
-              "line 5 is the current component name. line 21 is the name space referencing the current component before and after the equals sign are the same. Must add the name spacing to the router js file in the client folder. "
+              "Our teachers create their own themes and lesson plans, but also pull ideas from a curriculum called Kid Crafters. We are very pleased with it! They offer a curriculum for toddlers through preschoolers and three different \"Cycles\".  We chose to start with Cycle 3 because a lot of the themes correlate with the Virginia Standards of Learning for Kindergarten and we want all of our preschoolers to leave Kid's Cottage ready to be successful in Kindergarten."
+            ),
+            React.createElement(
+              "p",
+              null,
+              "The preschool program contains:"
+            ),
+            React.createElement(
+              "ul",
+              null,
+              React.createElement(
+                "li",
+                null,
+                "Circle time"
+              ),
+              React.createElement(
+                "li",
+                null,
+                "Arts & crafts"
+              ),
+              React.createElement(
+                "li",
+                null,
+                "Science"
+              ),
+              React.createElement(
+                "li",
+                null,
+                "Math"
+              ),
+              React.createElement(
+                "li",
+                null,
+                "Cooking"
+              ),
+              React.createElement(
+                "li",
+                null,
+                "Finger-plays & songs"
+              ),
+              React.createElement(
+                "li",
+                null,
+                "Large & small motor"
+              ),
+              React.createElement(
+                "li",
+                null,
+                "Dramatic play activities"
+              ),
+              React.createElement(
+                "li",
+                null,
+                "and much much more!"
+              )
+            ),
+            React.createElement(
+              "p",
+              null,
+              "We have purchased PALS (Phonological Awareness Literacy Screening) to administer to our 4 year olds to help bridge the gap between preschool and kindergarten."
             )
           ),
           React.createElement(MR.Footer, null)
@@ -1008,7 +1068,31 @@ console.log('Blog component');
             React.createElement(
               "p",
               null,
-              "line 5 is the current component name. line 21 is the name space referencing the current component before and after the equals sign are the same. Must add the name spacing to the router js file in the client folder. "
+              "Kid's Cottage will serve a maximum of 45 children ages 6 weeks through Pre-K. The children will be split up into four classrooms according to age/developmental appropriateness."
+            ),
+            React.createElement(
+              "ol",
+              null,
+              React.createElement(
+                "p",
+                null,
+                "Each classroom will:"
+              ),
+              React.createElement(
+                "li",
+                null,
+                "Have an experienced program leader"
+              ),
+              React.createElement(
+                "li",
+                null,
+                "Be fully equipped with approved and inspected toys/furniture appropriate for each age group"
+              ),
+              React.createElement(
+                "li",
+                null,
+                "Have an approved curriculum."
+              )
             )
           ),
           React.createElement(MR.Footer, null)
@@ -1070,9 +1154,58 @@ console.log('Blog component');
             "div",
             { className: "content" },
             React.createElement(
-              "p",
+              "ul",
               null,
-              "line 5 is the current component name. line 21 is the name space referencing the current component before and after the equals sign are the same. Must add the name spacing to the router js file in the client folder. "
+              React.createElement(
+                "li",
+                null,
+                " USDA Dietary Guidelines for Kids"
+              ),
+              React.createElement(
+                "li",
+                null,
+                "Teaching Healthy Food Choices"
+              ),
+              React.createElement(
+                "li",
+                null,
+                "Hidden Sources of Caffeine"
+              ),
+              React.createElement(
+                "li",
+                null,
+                "How to Stop Bedwetting"
+              ),
+              React.createElement(
+                "li",
+                null,
+                "7 Ways to End Picky Eating"
+              ),
+              React.createElement(
+                "li",
+                null,
+                "Quirky Discipline Rules That Work"
+              ),
+              React.createElement(
+                "li",
+                null,
+                "Things You Shouldn't Say to Your Child"
+              ),
+              React.createElement(
+                "li",
+                null,
+                "Unique Birthday Cakes"
+              ),
+              React.createElement(
+                "li",
+                null,
+                "Dealing with Picky Eaters"
+              ),
+              React.createElement(
+                "li",
+                null,
+                "Family Health Guide"
+              )
             )
           ),
           React.createElement(MR.Footer, null)
@@ -1363,9 +1496,48 @@ console.log('Blog component');
             "div",
             { className: "content" },
             React.createElement(
-              "p",
-              null,
-              "line 5 is the current component name. line 21 is the name space referencing the current component before and after the equals sign are the same. Must add the name spacing to the router js file in the client folder. "
+              "div",
+              { className: "parent-signin" },
+              React.createElement(
+                "form",
+                null,
+                React.createElement(
+                  "h1",
+                  null,
+                  "Parent Sign-in"
+                ),
+                "Username:",
+                React.createElement("br", null),
+                React.createElement("input", { type: "text", name: "username" }),
+                React.createElement("br", null),
+                "Password:",
+                React.createElement("br", null),
+                React.createElement("input", { type: "text", name: "password" }),
+                React.createElement("br", null),
+                React.createElement("input", { type: "submit", value: "Submit" })
+              )
+            ),
+            React.createElement(
+              "div",
+              { className: "staff-signin" },
+              React.createElement(
+                "form",
+                null,
+                React.createElement(
+                  "h1",
+                  null,
+                  "Staff Sign-in"
+                ),
+                "Username:",
+                React.createElement("br", null),
+                React.createElement("input", { type: "text", name: "username" }),
+                React.createElement("br", null),
+                "Password:",
+                React.createElement("br", null),
+                React.createElement("input", { type: "text", name: "password" }),
+                React.createElement("br", null),
+                React.createElement("input", { type: "submit", value: "Submit" })
+              )
             )
           ),
           React.createElement(MR.Footer, null)
@@ -1429,7 +1601,7 @@ console.log('Blog component');
             React.createElement(
               "p",
               null,
-              "line 5 is the current component name. line 21 is the name space referencing the current component before and after the equals sign are the same. Must add the name spacing to the router js file in the client folder. "
+              "At Kid's Cottage it is our main priority to have a loving, nurturing staff that is compassionate about a career teaching young children. All of our teachers have extensive background checks in addition to a working interview.  Although a majority of our staff come to us with experience and education in the preschool setting, we offer multiple training opportunities and additional classes through out the year.  We also have mandatory staff meetings and training sessions multiple times annually to ensure we have a well educated team.  Please meet our AMAZING STAFF below!"
             )
           ),
           React.createElement(MR.Footer, null)

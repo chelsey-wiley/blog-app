@@ -3,9 +3,31 @@ body{
     background-color: $lightblue;
 }
 
+.content ol{
+  list-style-type: decimal;
+}
+
+.content ul{
+  list-style-type: disc;
+}
+
+ li{
+  margin-left: 16px;
+  padding-bottom: .5em;
+}
+
+ p{
+  padding-bottom: .5em;
+  margin-bottom: 1em;
+  padding-top: .5em;
+  margin-top: 1em;
+  line-height: 1.2em;
+
+}
 .page {
   max-width: 80%;
   margin: 0 auto;
+  font-size: 1.2em;
 }
 
 .footer {
@@ -32,4 +54,28 @@ body{
 
 .content{
   padding-top: 24px;
+}
+
+.parent-signin h1{
+  color: $darkblue;
+  font-size: 2em;
+  padding-bottom: .5em;
+  padding-top: 1em;
+}
+
+.parent-signin{
+  float: left;
+  font-size: 1.2em;
+}
+
+.staff-signin h1{
+  color: $darkblue;
+  font-size: 2em;
+  padding-bottom: .5em;
+  padding-top: 1em;
+}
+
+.staff-signin{
+  float: right;
+  font-size: 1.2em;
 }

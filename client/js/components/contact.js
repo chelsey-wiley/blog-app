@@ -16,7 +16,9 @@ class Contact extends React.Component {
       </div>
 
       <div className="content">
-        <p>line 5 is the current component name. line 21 is the name space referencing the current component before and after the equals sign are the same. Must add the name spacing to the router js file in the client folder. </p>
+        <p>We'd love to hear from you!</p>
+        <img src="Slice 1.png"/>
+
       </div>
 
 

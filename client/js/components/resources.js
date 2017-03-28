@@ -14,10 +14,22 @@ class Resources extends React.Component {
       <div className="title">
         <h1>Resources</h1>
       </div>
-      
+
       <div className="content">
-        <p>line 5 is the current component name. line 21 is the name space referencing the current component before and after the equals sign are the same. Must add the name spacing to the router js file in the client folder. </p>
-      </div>
+        <ul>
+        <li> USDA Dietary Guidelines for Kids</li>
+        <li>Teaching Healthy Food Choices</li>
+        <li>Hidden Sources of Caffeine</li>
+        <li>How to Stop Bedwetting</li>
+        <li>7 Ways to End Picky Eating</li>
+        <li>Quirky Discipline Rules That Work</li>
+        <li>Things You Shouldn't Say to Your Child</li>
+        <li>Unique Birthday Cakes</li>
+        <li>Dealing with Picky Eaters</li>
+        <li>Family Health Guide</li>
+      </ul>
+      {/*Content taken from:http://www.parenting.com/child*/}
+    </div>
 
 
 
