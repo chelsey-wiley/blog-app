@@ -507,6 +507,11 @@ if (window.MR === undefined) {
     }
 
     _createClass(Header, [{
+      key: "hamburger",
+      value: function hamburger(x) {
+        console.log('clicked it');
+      }
+    }, {
       key: "render",
       value: function render() {
 

@@ -3,6 +3,10 @@ if (window.MR === undefined) {window.MR = {};}
 (function() {
 
 class Header extends React.Component {
+
+  hamburger(x){
+    console.log('clicked it')
+  }
   render() {
 
     return <div className="nav">

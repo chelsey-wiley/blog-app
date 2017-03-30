@@ -26,7 +26,9 @@ float: right;
   padding:10px;
 }
 
-
+.menu {
+  display: none;
+}
 .eyebrow {
   margin-top: 1em;
   float: right;
@@ -41,4 +43,13 @@ float: right;
 
 .eyebrow li:hover{
   color: $green;
+}
+
+.hamburger{
+  display: none;
+}
+
+
+@media (max-width:1400px) {
+
 }

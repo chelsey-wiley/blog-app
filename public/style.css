@@ -165,6 +165,9 @@ p {
   width: 100px;
   padding: 10px; }
 
+.menu {
+  display: none; }
+
 .eyebrow {
   margin-top: 1em;
   float: right; }
@@ -177,6 +180,9 @@ p {
 
 .eyebrow li:hover {
   color: #c6de16; }
+
+.hamburger {
+  display: none; }
 
 .post-title {
   font-size: 1.6em;
