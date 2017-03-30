@@ -1,8 +1,13 @@
 # Kid's Cottage
 
+[View Google Docs Files for this project](https://drive.google.com/open?id=0B-MK2C3C-rkyTnZDY3ItUnE4TDg)
+
+[View GitHub Files for this project](https://github.com/chelsey-wiley/blog-app)
+
+[View this project live on Heroku](https://kidscottage.herokuapp.com/)
+
 ## Objective:
 The Kid’s Cottage blog allows parent to be actively involved in the daily lives of their children even though they can’t be physically present. The blog’s goal is to be a continuation of the Cottage community encouraging parents to get involved and begin conversations with other parents and staff.
-
 
 ## Use:
  - Problem <br>
