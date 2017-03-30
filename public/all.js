@@ -620,6 +620,136 @@ function _inherits(subClass, superClass) { if (typeof superClass !== "function" 
 if (window.MR === undefined) {
   window.MR = {};
 }
+
+(function () {
+  var Header2 = function (_React$Component) {
+    _inherits(Header2, _React$Component);
+
+    function Header2() {
+      _classCallCheck(this, Header2);
+
+      return _possibleConstructorReturn(this, (Header2.__proto__ || Object.getPrototypeOf(Header2)).apply(this, arguments));
+    }
+
+    _createClass(Header2, [{
+      key: "hamburger",
+      value: function hamburger(x) {
+        console.log('clicked it');
+      }
+    }, {
+      key: "render",
+      value: function render() {
+
+        return React.createElement(
+          "div",
+          { className: "nav" },
+          React.createElement(
+            "ul",
+            { className: "eyebrow" },
+            React.createElement(
+              "li",
+              null,
+              React.createElement(
+                ReactRouter.Link,
+                { to: '/Signin' },
+                "Sign In"
+              )
+            ),
+            React.createElement(
+              "li",
+              null,
+              React.createElement(
+                ReactRouter.Link,
+                { to: '/Contact' },
+                "Contact"
+              )
+            )
+          ),
+          React.createElement(
+            "div",
+            { className: "nav-link" },
+            React.createElement(
+              ReactRouter.Link,
+              { to: '/' },
+              React.createElement("img", { className: "media-logo", src: "kidsfav.png" })
+            ),
+            React.createElement(
+              "ul",
+              null,
+              React.createElement(
+                "li",
+                null,
+                React.createElement(
+                  ReactRouter.Link,
+                  { to: '/Blog' },
+                  "Blog"
+                )
+              ),
+              React.createElement(
+                "li",
+                null,
+                React.createElement(
+                  ReactRouter.Link,
+                  { to: '/Resources' },
+                  "Resources"
+                )
+              ),
+              React.createElement(
+                "li",
+                null,
+                React.createElement(
+                  ReactRouter.Link,
+                  { to: '/Parents' },
+                  "Parents"
+                )
+              ),
+              React.createElement(
+                "li",
+                null,
+                React.createElement(
+                  ReactRouter.Link,
+                  { to: '/Staff' },
+                  "Staff"
+                )
+              ),
+              React.createElement(
+                "li",
+                null,
+                React.createElement(
+                  ReactRouter.Link,
+                  { to: '/Programs' },
+                  "Programs"
+                )
+              )
+            ),
+            React.createElement(
+              ReactRouter.Link,
+              { to: '/' },
+              React.createElement("img", { className: "logo", src: "kidsfav.png" })
+            )
+          )
+        );
+      }
+    }]);
+
+    return Header2;
+  }(React.Component);
+
+  MR.Header2 = Header2;
+})();
+"use strict";
+
+var _createClass = function () { function defineProperties(target, props) { for (var i = 0; i < props.length; i++) { var descriptor = props[i]; descriptor.enumerable = descriptor.enumerable || false; descriptor.configurable = true; if ("value" in descriptor) descriptor.writable = true; Object.defineProperty(target, descriptor.key, descriptor); } } return function (Constructor, protoProps, staticProps) { if (protoProps) defineProperties(Constructor.prototype, protoProps); if (staticProps) defineProperties(Constructor, staticProps); return Constructor; }; }();
+
+function _classCallCheck(instance, Constructor) { if (!(instance instanceof Constructor)) { throw new TypeError("Cannot call a class as a function"); } }
+
+function _possibleConstructorReturn(self, call) { if (!self) { throw new ReferenceError("this hasn't been initialised - super() hasn't been called"); } return call && (typeof call === "object" || typeof call === "function") ? call : self; }
+
+function _inherits(subClass, superClass) { if (typeof superClass !== "function" && superClass !== null) { throw new TypeError("Super expression must either be null or a function, not " + typeof superClass); } subClass.prototype = Object.create(superClass && superClass.prototype, { constructor: { value: subClass, enumerable: false, writable: true, configurable: true } }); if (superClass) Object.setPrototypeOf ? Object.setPrototypeOf(subClass, superClass) : subClass.__proto__ = superClass; }
+
+if (window.MR === undefined) {
+  window.MR = {};
+}
 console.log('home component');
 (function () {
   var Home = function (_React$Component) {
@@ -641,7 +771,7 @@ console.log('home component');
           React.createElement(
             "header",
             null,
-            React.createElement(MR.Header, null)
+            React.createElement(MR.Header2, null)
           ),
           React.createElement(
             "div",
@@ -1667,6 +1797,7 @@ if (window.MR === undefined) {
   var router = React.createElement(
     Router,
     { history: ReactRouter.hashHistory },
+    React.createElement(Route, { path: '/header2', component: MR.Header2 }),
     React.createElement(Route, { path: '/', component: MR.Home }),
     React.createElement(Route, { path: '/Blog', component: MR.Blog }),
     React.createElement(Route, { path: '/NewsletterSignup', component: MR.NewsletterSignup }),

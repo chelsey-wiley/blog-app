@@ -8,7 +8,7 @@ class Home extends React.Component {
     return <div className="page">
 
       <header>
-      <MR.Header/>
+      <MR.Header2/>
       </header>
 
       <div className="title">
