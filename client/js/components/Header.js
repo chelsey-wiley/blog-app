@@ -19,6 +19,8 @@ class Header extends React.Component {
 
 
     <div className="nav-link">
+    <ReactRouter.Link to={'/'}><img className="media-logo" src="kidsfav.png"/></ReactRouter.Link>
+
       <ul>
         <li><ReactRouter.Link to={'/Blog'}>Blog</ReactRouter.Link></li>
         <li><ReactRouter.Link to={'/Resources'}>Resources</ReactRouter.Link></li>

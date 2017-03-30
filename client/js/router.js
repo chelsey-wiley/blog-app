@@ -10,7 +10,7 @@ if (window.MR === undefined) {window.MR = {};}
   var IndexRoute = ReactRouter.IndexRoute;
 
   var router = <Router history={ReactRouter.hashHistory}>
-    <Route path="/header2" component={MR.Header2}/>
+    <Route path="/header" component={MR.Header}/>
 
 
       <Route path="/" component={MR.Home} />

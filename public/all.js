@@ -544,6 +544,11 @@ if (window.MR === undefined) {
             "div",
             { className: "nav-link" },
             React.createElement(
+              ReactRouter.Link,
+              { to: '/' },
+              React.createElement("img", { className: "media-logo", src: "kidsfav.png" })
+            ),
+            React.createElement(
               "ul",
               null,
               React.createElement(
@@ -771,7 +776,7 @@ console.log('home component');
           React.createElement(
             "header",
             null,
-            React.createElement(MR.Header2, null)
+            React.createElement(MR.Header, null)
           ),
           React.createElement(
             "div",
@@ -1797,7 +1802,7 @@ if (window.MR === undefined) {
   var router = React.createElement(
     Router,
     { history: ReactRouter.hashHistory },
-    React.createElement(Route, { path: '/header2', component: MR.Header2 }),
+    React.createElement(Route, { path: '/header', component: MR.Header }),
     React.createElement(Route, { path: '/', component: MR.Home }),
     React.createElement(Route, { path: '/Blog', component: MR.Blog }),
     React.createElement(Route, { path: '/NewsletterSignup', component: MR.NewsletterSignup }),
