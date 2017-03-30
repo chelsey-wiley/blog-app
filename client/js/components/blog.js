@@ -15,6 +15,7 @@ class Blog extends React.Component {
       <div className="title">
         <h1>Blog</h1>
       </div>
+
       <div className="post-sidebar">
         <ul>
           <li>Most Viewed</li>
@@ -29,6 +30,14 @@ class Blog extends React.Component {
     <MR.SecondPost/>
     </div>
 
+    <div className="post-categories">
+      <ul>
+        <li>Most Viewed</li>
+        <li>Most Commented</li>
+        <li>Most Shared</li>
+      </ul>
+      <MR.NewsletterSignup/>
+    </div>
       <MR.Footer/>
     </div>)
   }
