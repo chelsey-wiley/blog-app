@@ -16,7 +16,7 @@ handleChange(event) {
 
 handleSubmit(event) {
   {/onSubmit={this.handleSubmit}/}
-  alert( 'Your news letter will be sent to ' + this.state.value);
+  alert( 'Updates will be sent to ' + this.state.value);
   event.preventDefault();
 }
 
@@ -25,10 +25,10 @@ handleSubmit(event) {
     return (<div className="sign-up-form">
     <form /*action="http://requestb.in/1jt17pk1" method="post"*/ onSubmit={this.handleSubmit}>
         <label>
-            Enter your email address<br/>
+            Kis's Cottage Updates<br/>
           <input type="text" value={this.state.value} onChange={this.handleChange} />
         </label>
-        <input className="submit-button" type="submit" value="Get our Newsletter!" />
+        <input className="submit-button" type="submit" value="Sign me up" />
       </form>
 
 

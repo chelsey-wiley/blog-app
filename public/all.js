@@ -760,7 +760,7 @@ if (window.MR === undefined) {
         {
           /onSubmit={this.handleSubmit}/;
         }
-        alert('Your news letter will be sent to ' + this.state.value);
+        alert('Updates will be sent to ' + this.state.value);
         event.preventDefault();
       }
     }, {
@@ -776,11 +776,11 @@ if (window.MR === undefined) {
             React.createElement(
               'label',
               null,
-              'Enter your email address',
+              'Kis\'s Cottage Updates',
               React.createElement('br', null),
               React.createElement('input', { type: 'text', value: this.state.value, onChange: this.handleChange })
             ),
-            React.createElement('input', { className: 'submit-button', type: 'submit', value: 'Get our Newsletter!' })
+            React.createElement('input', { className: 'submit-button', type: 'submit', value: 'Sign me up' })
           )
         );
       }
